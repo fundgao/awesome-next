@@ -8,6 +8,7 @@
 ```
 npm install axios
 ```
-7. 
-8. 
-9. 
+7. [ahooks](https://ahooks.js.org/zh-CN/hooks/use-request/index)
+8. [ant-design](https://ant-design.antgroup.com/components/overview-cn)
+9. country-locale-map: 多语言
+10. crypto-js: 加密
