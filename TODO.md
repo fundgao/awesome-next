@@ -12,3 +12,17 @@ npm install axios
 8. [ant-design](https://ant-design.antgroup.com/components/overview-cn)
 9. country-locale-map: 多语言
 10. crypto-js: 加密
+
+### 构建工具
+- [webpack](https://webpack.docschina.org/concepts/)
+- [vite](https://cn.vitejs.dev/guide/)
+- [turbo](https://turbo.build)
+
+### 前端框架
+- [React](https://react.dev/reference/react)
+- [Vue](https://cn.vuejs.org)
+- [NextJS](https://nextjs.org/docs)
+
+### UI 框架
+- [Ant Design - React](https://ant-design.antgroup.com/components/overview-cn)
+- [Element - Vue](https://element.eleme.cn/#/zh-CN/component/installation)
