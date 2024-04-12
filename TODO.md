@@ -12,6 +12,9 @@ npm install axios
 8. [ant-design](https://ant-design.antgroup.com/components/overview-cn)
 9. country-locale-map: 多语言
 10. crypto-js: 加密
+11. dayjs or moment
+12. mqtt
+13. swiper
 
 ### 构建工具
 - [webpack](https://webpack.docschina.org/concepts/)
