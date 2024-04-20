@@ -29,3 +29,12 @@ npm install axios
 ### UI 框架
 - [Ant Design - React](https://ant-design.antgroup.com/components/overview-cn)
 - [Element - Vue](https://element.eleme.cn/#/zh-CN/component/installation)
+
+```
+app route
+
+// `app/dashboard/page.tsx` is the UI for the `/dashboard` URL
+export default function Page() {
+  return <h1>Hello, Dashboard Page!</h1>
+}
+```
