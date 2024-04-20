@@ -30,9 +30,23 @@ npm install axios
 - [Ant Design - React](https://ant-design.antgroup.com/components/overview-cn)
 - [Element - Vue](https://element.eleme.cn/#/zh-CN/component/installation)
 
+### SSO 埋点
 ```
-app route
+埋点 GA
+https://analytics.google.com/analytics/web/provision/#/provision/create
+Clarity
+https://clarity.microsoft.com/projects
 
+顶栏弹窗 ptengine
+https://www.ptengine.com/app/47j8ocnn/home
+https://www.ptengine.cn/
+
+Cookies 授权 & 扫描
+https://app-apac.onetrust.com/cookies/websites
+```
+
+### app route
+```
 // `app/dashboard/page.tsx` is the UI for the `/dashboard` URL
 export default function Page() {
   return <h1>Hello, Dashboard Page!</h1>
