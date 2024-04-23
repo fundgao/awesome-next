@@ -29,6 +29,7 @@ npm install axios
 ### UI 框架
 - [Ant Design - React](https://ant-design.antgroup.com/components/overview-cn)
 - [Element - Vue](https://element.eleme.cn/#/zh-CN/component/installation)
+- [Tailwind CSS](https://tailwindcss.com/docs/installation)
 
 ### SSO 埋点
 ```
