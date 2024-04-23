@@ -15,11 +15,13 @@ export default function Page() {
         height={500}
         alt="Picture of the author"
       />
-      <div className='text-wrapper absolute inset-y-1/2 w-max	h-max inset-x-1/4'>
+      <div className='text-wrapper absolute inset-y-1/3 w-max	h-max inset-x-1/4'>
         <p className="text1 text-white text-lg">对不起！</p>
-        <p className="text2 text-lg text-amber-500 mt-1.5">您要找的页面找不到了</p>
-        <p className="text3 text-8xl text-purple-800 mt-1.5">404</p>
-        <Link href="/" className='block text-white text-lg bg-purple-950 py-2.5 px-5 rounded-2xl mt-3.5'>回到首页</Link>
+        <p className="text2 text-lg text-blue-600 mt-1.5">您要找的页面找不到了</p>
+        <p className="text3 text-8xl mt-1.5 bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text	" style={{
+          WebkitTextFillColor: 'transparent'
+        }}>404</p>
+        <Link href="/" className='block w-max text-white text-lg bg-purple-950 py-2.5 px-5 rounded-2xl mt-3.5'>回到首页</Link>
       </div>
     </div>
   );
