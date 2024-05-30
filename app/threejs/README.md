@@ -3,6 +3,7 @@
 - [threejs examples](https://github.com/mrdoob/three.js/tree/master/examples)
 - [https://gitee.com/ZHANG_6666/Three.js3D/](https://gitee.com/ZHANG_6666/Three.js3D/)
 - [Three.js开发中遇到的常见问题总结和性能优化](https://blog.csdn.net/weixin_43835425/article/details/132665897)
+- [谷歌网页 3D 增强现实](https://developers.google.cn/ar/develop/webxr/model-viewer?eqid=b56755580002ee08000000046458a5a3&hl=zh-cn)
 
 这些问题涵盖了three.js的各个方面，从基础知识到高级特性，从应用领域到性能优化。面试者可以根据需要进行适当的调整和补充。
 
