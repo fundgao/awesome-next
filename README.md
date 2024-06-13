@@ -2,6 +2,11 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+- [Magic UI](https://magicui.design/docs/installation/react)
+- Threejs
+- web3
+- tailwindcss
+
 First, run the development server:
 
 ```bash
