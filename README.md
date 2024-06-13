@@ -3,6 +3,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ## Getting Started
 
 - [Magic UI](https://magicui.design/docs/installation/react)
+- [NextUI](https://nextui.org/docs/guide/installation)
 - [Threejs](https://threejs.org/)
 - [Threejs Demo](https://github.com/xiaolidan00/my-earth)
 - [Threejs 教程集合](https://juejin.cn/collection/7375807995392032777)
