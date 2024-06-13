@@ -6,6 +6,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 - Threejs
 - web3
 - tailwindcss
+- [白嫖 - 图床](https://molunerfinn.com/PicGo/)
 
 First, run the development server:
 
