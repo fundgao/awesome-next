@@ -11,6 +11,9 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 - [tailwindcss](https://tailwindcss.com/docs/installation)
 - [白嫖 - 图床](https://molunerfinn.com/PicGo/)
 
+## DEMO
+- [大文件切片上传](https://juejin.cn/post/7356817667574136884)
+
 First, run the development server:
 
 ```bash
