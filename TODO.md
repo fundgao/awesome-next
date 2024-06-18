@@ -31,6 +31,23 @@ npm install axios
 - [Element - Vue](https://element.eleme.cn/#/zh-CN/component/installation)
 - [Tailwind CSS](https://tailwindcss.com/docs/installation)
 
+### SEO 
+```
+<title>XXX</title>
+<meta name="robots" content="index,follow">
+<meta name="googlebot" content="index,follow">
+<meta name="description" content="">
+...一堆，参考苹果官网
+
+
+xxx.com/robots.txt
+xxx.com/sitemap.xml
+
+https://www.apple.com/robots.txt
+
+h1 标签
+```
+
 ### SSO 埋点
 ```
 埋点 GA
