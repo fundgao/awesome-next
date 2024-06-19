@@ -5,6 +5,8 @@
 4. [web3js](https://docs.web3js.org)
 5. [webpack](https://webpack.docschina.org/concepts/) or [vite](https://cn.vitejs.dev/guide/)
 6. [axios](https://axios-http.com/docs/intro)
+7. [chatgpt key](https://platform.openai.com/settings/profile?tab=api-keys)
+8. [Open AI Quickstart](https://platform.openai.com/docs/quickstart?context=node)
 ```
 npm install axios
 ```
