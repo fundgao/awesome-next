@@ -15,6 +15,10 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ## DEMO
 - [大文件切片上传](https://juejin.cn/post/7356817667574136884)
 - [前端工程化 Jenkins](https://juejin.cn/post/7354406980784504870)
+- 图片压缩上传 [纯前端实现 JPG 图片压缩 | canvas - 掘金](https://juejin.cn/post/7349465019325661203)
+- JS调用摄像头 [一个 API,带你打开前端摄像头之门🥳 - 掘金](https://juejin.cn/post/7382386471272218659)
+- [传统经典编程与AIGC的融合](https://juejin.cn/post/7371731578962493474)
+
 
 First, run the development server:
 
