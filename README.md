@@ -14,6 +14,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## DEMO
 - [大文件切片上传](https://juejin.cn/post/7356817667574136884)
+- [前端工程化 Jenkins](https://juejin.cn/post/7354406980784504870)
 
 First, run the development server:
 
