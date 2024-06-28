@@ -24,6 +24,17 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 - 图片压缩上传 [纯前端实现 JPG 图片压缩 | canvas - 掘金](https://juejin.cn/post/7349465019325661203)
 - JS调用摄像头 [一个 API,带你打开前端摄像头之门🥳 - 掘金](https://juejin.cn/post/7382386471272218659)
 
+## SEO
+* [next-sitemap](https://www.npmjs.com/package/next-sitemap)
+* [next-seo](https://www.npmjs.com/package/next-seo)
+* [Nextjs SEO Docs](https://nextjs.org/docs/app/api-reference/file-conventions/metadata)
+* [manifest.json](https://nextjs.org/docs/app/api-reference/file-conventions/metadata/manifest)
+
+```
+npm i next-sitemap
+
+npm i next-seo
+```
 
 First, run the development server:
 
