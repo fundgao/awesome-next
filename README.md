@@ -3,14 +3,15 @@
 * [ahooks](https://ahooks.js.org/)
 * NextJS
 * TypeScript
-* AIGC
+* AIGC - openai 豆包
 * ThreeJS
-* Web3.0
+* Web3.0 [$ npm install --save @solana/web3.js](https://github.com/solana-labs/solana-web3.js)
 * [Ant Design](https://ant-design.antgroup.com/index-cn)
-- [Magic UI](https://magicui.design/docs/installation/react)
-- [NextUI](https://nextui.org/docs/guide/installation)
-- [tailwindcss](https://tailwindcss.com/docs/installation)
-- [白嫖 - 图床](https://molunerfinn.com/PicGo/)
+* [Magic UI](https://magicui.design/docs/installation/react)
+* [NextUI](https://nextui.org/docs/guide/installation)
+* [tailwindcss](https://tailwindcss.com/docs/installation)
+* [白嫖 - 图床](https://molunerfinn.com/PicGo/)
+* [npm i dotenv](https://www.npmjs.com/package/dotenv) - next 自带环境切换
 
 ## AIGC 
 * [openai npm](https://www.npmjs.com/package/openai)
@@ -21,9 +22,12 @@
 * [Threejs](https://threejs.org/)
 * [Threejs Demo](https://github.com/xiaolidan00/my-earth)
 * [Threejs 教程集合](https://juejin.cn/collection/7375807995392032777)
+* [three.js 下雨特效（高级版本）](https://juejin.cn/post/7369784341465907240)
 
 ## DEMO
 - [大文件切片上传](https://juejin.cn/post/7356817667574136884)
+[通过file.slice将大文件chunks切成许多个大小相等的chunk](https://juejin.cn/post/7376690981858902050?searchId=20240629130525C281235DC0DDDFF3AB6A)
+[使用Range实现网络文件下载的断点续传](https://juejin.cn/post/7381455296658751551?searchId=20240629130525C281235DC0DDDFF3AB6A)
 - [前端工程化 Jenkins](https://juejin.cn/post/7354406980784504870)
 - 图片压缩上传 [纯前端实现 JPG 图片压缩 | canvas - 掘金](https://juejin.cn/post/7349465019325661203)
 - JS调用摄像头 [一个 API,带你打开前端摄像头之门🥳 - 掘金](https://juejin.cn/post/7382386471272218659)
