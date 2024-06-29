@@ -1,10 +1,14 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-## Getting Started
-
+## 相关依赖
+* React
+* [ahooks](https://ahooks.js.org/)
+* NextJS
+* TypeScript
+* AIGC
+* ThreeJS
+* Web3.0
+* [Ant Design](https://ant-design.antgroup.com/index-cn)
 - [Magic UI](https://magicui.design/docs/installation/react)
 - [NextUI](https://nextui.org/docs/guide/installation)
-- web3
 - [tailwindcss](https://tailwindcss.com/docs/installation)
 - [白嫖 - 图床](https://molunerfinn.com/PicGo/)
 
