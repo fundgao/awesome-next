@@ -81,7 +81,7 @@ bun dev
 
 ## CSS 选择器
 * [重拾 CSS 伪类选择器 nth-of-type, nth-child](https://juejin.cn/post/6844904052220755975)
-* [更强大的 :nth-child 选择器](https://juejin.cn/post/7385929329640177676) `.cc:nth-child(2 of .cc) {}`
+* [更强大的 :nth-child 选择器](https://juejin.cn/post/7385929329640177676) `.cc:nth-child(2 of .cc) {}` `.cc:not(.cc ~ .cc) {}`
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
