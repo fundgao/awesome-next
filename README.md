@@ -39,8 +39,8 @@
 * [manifest.json](https://nextjs.org/docs/app/api-reference/file-conventions/metadata/manifest)
 
 ```
+这些第三方依赖不用，因为有自带的
 npm i next-sitemap
-
 npm i next-seo
 ```
 
