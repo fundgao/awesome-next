@@ -56,6 +56,28 @@ pnpm dev
 bun dev
 ```
 
+## node 版本切换
+```
+全局安装n: npm install -g n
+
+安装最新稳定版 node: n stable
+
+安装最新版本 node: n latest
+
+安装某个具体node版本: n 14.16.1
+
+删除某个版本: n rm 14.16.1
+
+查看安装路径: n which 14.16.1
+
+切换版本: 输入n回车 出现node版本列表，上下键移动选择切换的版本后回车(切换非n安装的node版本会报错，删掉，使用n安装即可)
+
+以指定的版本来执行脚本: n use 14.16.1 test.js
+
+查看已经安装的版本: n ls
+
+查看服务器上所有可用的版本: n ls-remote --all
+```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
