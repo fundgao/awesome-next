@@ -1,6 +1,5 @@
 ## 相关依赖
 * React
-* [ahooks](https://ahooks.js.org/)
 * NextJS
 * TypeScript
 * AIGC - openai 豆包
@@ -12,6 +11,11 @@
 * [tailwindcss](https://tailwindcss.com/docs/installation)
 * [白嫖 - 图床](https://molunerfinn.com/PicGo/)
 * [npm i dotenv](https://www.npmjs.com/package/dotenv) - next 自带环境切换
+* [ahooks](https://ahooks.js.org/)
+* [Lodash](https://github.com/lodash/lodash)
+* [Radash - Lodash 轻量版](https://github.com/sodiray/radash)
+* moment
+* dayjs - moment 轻量版
 
 ## AIGC 
 * [openai npm](https://www.npmjs.com/package/openai)
