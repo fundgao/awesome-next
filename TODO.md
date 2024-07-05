@@ -73,3 +73,94 @@ export default function Page() {
   return <h1>Hello, Dashboard Page!</h1>
 }
 ```
+
+### CSS
+* CSS margin-trim、initial-letter
+* @container容器查询，@scope规则，CSS嵌套，CSS数学函数，CSS滚动
+* @starting-style规则、transition-behavior属性
+* 锚点定位里面的@position-try, anchor-size(), inset-area, position-try-options, position-visibility等特性
+* DOM里面的WebCodecs API，popover特性，Screen Wake Lock API，PerformanceObserver API、Background Sync API、Payment Handler API、Periodic Background Sync API、Reporting API等。
+* [CSS的6个新特性](https://blog.csdn.net/qq_37916164/article/details/129302240)
+
+```
+CSS 新特性 [https://developer.chrome.com/blog/anchor-positioning-api?hl=zh-cn]
+1.仅使用transition属性，实现元素从 display:inline ↔ none 的过渡效果
+img {
+ transition: .25s allow-discrete;
+ opacity: 1;
+}
+
+img[hidden] {
+ opacity: 0;
+}
+
+2.@starting-style顾名思义就是声明起始样式，专门用在transition过渡效果中
+img {
+ transition: .25s allow-discrete;
+ opacity: 1;
+ @starting-style {
+ opacity: 0;
+ }
+}
+
+3.CSS 锚点定位 position-anchor
+.trigger {
+ anchor-name: --my-anchor; 
+}
+.target {
+ position: absolute;
+ position-anchor: --my-anchor;
+ left: anchor(left);
+ top: anchor(bottom);
+ margin-top: .5rem;
+}
+
+居中对齐
+.trigger2 {
+ anchor-name: --anchor2; 
+}
+.target2 {
+ position: absolute;
+ position-anchor: --anchor2;
+ left: anchor(center);
+ top: anchor(bottom);
+ justify-self: anchor-center;
+}
+
+4.使用 anchor-size() 设置元素大小
+button {
+ anchor-name: --anchor-select;
+ position: relative;
+ width: fit-content; 
+}
+menu:popover-open {
+ position: absolute;
+ position-anchor: --anchor-select;
+ left: anchor(left);
+ top: anchor(bottom);
+ width: anchor-size(width);
+ margin-top: -1px;
+}
+
+5.使用 @position-try 调整锚点位置
+.trigger {
+ anchor-name: --my-anchor; 
+}
+.target {
+ position: absolute;
+ position-anchor: --my-anchor;
+ inset-area: right span-bottom;
+ /* 候补位置选项 */
+ position-try-options: --bottom-left;
+}
+/* 候补位置 */
+@position-try --bottom-left {
+ inset-area: bottom span-left;
+}
+
+6.position-visibility与滚动溢出显隐
+position-visibility: always;
+position-visibility: anchors-visible;
+position-visibility: no-overflow;
+```
+
