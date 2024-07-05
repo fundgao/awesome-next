@@ -163,4 +163,15 @@ position-visibility: always;
 position-visibility: anchors-visible;
 position-visibility: no-overflow;
 ```
+```
+https://developer.mozilla.org/zh-CN/docs/Web/CSS/scroll-snap-type
+scroll-snap-type
+css 滚动吸附
 
+content-visibility是CSS新增的属性，用来提高页面渲染性能，可以控制一个元素是否渲染其内容，并且允许浏览器跳过这些元素的布局与渲染。
+
+韩文换行加 word-break: auto-phrase;
+
+color()是 CSS 中颜色函数，提供了一种统一的方式来指定任何 RGB 颜色空间中的颜色值。
+background-color: color(prophoto-rgb 0 1 0);
+```
