@@ -23,6 +23,10 @@
 * [openai docs](https://platform.openai.com/docs/quickstart?context=node)
 * [传统经典编程与AIGC的融合](https://juejin.cn/post/7371731578962493474)
 
+## Crypto
+* [World Chain Developer](https://developer.worldcoin.org/teams/team_95a2c9a39a3cf2b803c9392ae3615f16)
+* [World Coin Install](https://docs.worldcoin.org/quick-start/installation)
+
 ## ThreeJS
 * [Threejs](https://threejs.org/)
 * [Threejs Demo](https://github.com/xiaolidan00/my-earth)
