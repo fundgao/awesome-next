@@ -1,6 +1,6 @@
 ## 相关依赖
 * React
-* NextJS
+* [NextJS](https://nextjs.org/docs)
 * TypeScript
 * AIGC - openai 豆包
 * ThreeJS
