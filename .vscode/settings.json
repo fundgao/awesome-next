@@ -1,3 +1,5 @@
 {
-  "audioCues.format": "always"
+    "accessibility.signals.format": {
+        "sound": "always"
+    }
 }
