@@ -40,6 +40,7 @@
 - [前端工程化 Jenkins](https://juejin.cn/post/7354406980784504870)
 - 图片压缩上传 [纯前端实现 JPG 图片压缩 | canvas - 掘金](https://juejin.cn/post/7349465019325661203)
 - JS调用摄像头 [一个 API,带你打开前端摄像头之门🥳 - 掘金](https://juejin.cn/post/7382386471272218659)
+- [Webpack常用优化手段](https://github.com/liuhp/fe-blog/issues/4)
 
 ## SEO
 * [next-sitemap](https://www.npmjs.com/package/next-sitemap)
@@ -94,6 +95,7 @@ bun dev
 * [CSS 的灵感](https://github.com/chokcoco/CSS-Inspiration)
 * [重拾 CSS 伪类选择器 nth-of-type, nth-child](https://juejin.cn/post/6844904052220755975)
 * [更强大的 :nth-child 选择器](https://juejin.cn/post/7385929329640177676) `.cc:nth-child(2 of .cc) {}` `.cc:not(.cc ~ .cc) {}`
+* [CSS工具资源汇总](https://github.com/liuhp/fe-blog/issues/2)
 
 ## Deploy on Vercel
 
