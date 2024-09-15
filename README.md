@@ -67,28 +67,41 @@ pnpm dev
 bun dev
 ```
 
-## node 版本切换
-```
-全局安装n: npm install -g n
+# npm 换源
 
-安装最新稳定版 node: n stable
+* 查看当前源 `npm config get registry`
+* 更换淘宝源 `npm config set registry https://registry.npmmirror.com/`
 
-安装最新版本 node: n latest
+## 使用 nrm 管理源
+* 安装 nrm `npm install nrm -g --save`
+* 查看源列表 `nrm ls`
+* 切换淘宝源 `nrm use taobao`
+* 源测速 `nrm test taobao`
 
-安装某个具体node版本: n 14.16.1
+## node 版本管理 [nvm](https://github.com/nvm-sh/nvm)
 
-删除某个版本: n rm 14.16.1
+* nvm off // 禁用node.js版本管理(不卸载任何东西)
+* nvm on // 启用node.js版本管理
+* nvm install <version> // 安装node.js的命名 version是版本号 例如：nvm install 8.12.0
+* nvm uninstall <version> // 卸载node.js是的命令，卸载指定版本的nodejs，当安装失败时卸载使用
+* nvm ls // 显示所有安装的node.js版本
+* nvm list available // 显示可以安装的所有node.js的版本
+* nvm use <version> // 切换到使用指定的nodejs版本
+* nvm v // 显示nvm版本
+* nvm install stable // 安装最新稳定版
 
-查看安装路径: n which 14.16.1
-
-切换版本: 输入n回车 出现node版本列表，上下键移动选择切换的版本后回车(切换非n安装的node版本会报错，删掉，使用n安装即可)
-
-以指定的版本来执行脚本: n use 14.16.1 test.js
-
-查看已经安装的版本: n ls
-
-查看服务器上所有可用的版本: n ls-remote --all
-```
+$ nvm use 16  
+Now using node v16.9.1 (npm v7.21.1)  
+$ node -v  
+v16.9.1  
+$ nvm use 14  
+Now using node v14.18.0 (npm v6.14.15)  
+$ node -v  
+v14.18.0  
+$ nvm install 12  
+Now using node v12.22.6 (npm v6.14.5)  
+$ node -v  
+v12.22.6  
 
 ## CSS
 * [Grid 布局](https://juejin.cn/post/7409110408991522827)
