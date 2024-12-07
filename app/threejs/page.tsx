@@ -13,6 +13,9 @@ import * as dat from "dat.gui";
  * https://juejin.cn/post/7055296508870000670
  */
 export default function Page() {
+  if (typeof window == "undefined") {
+    return <></>;
+  }
   const gui = new dat.GUI();
   // 创建场景
   const sence = new THREE.Scene();
