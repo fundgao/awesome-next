@@ -4,6 +4,7 @@ import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 import { gsap } from "gsap";
 import * as dat from "dat.gui";
+import { useEffect } from "react";
 
 /**
  * Threejs 学习
@@ -13,16 +14,14 @@ import * as dat from "dat.gui";
  * https://juejin.cn/post/7055296508870000670
  */
 export default function Page() {
-  if (typeof window == "undefined") {
-    return <></>;
-  }
+  const _window = window || { innerWidth: 1920, innerHeight: 1080 };
   const gui = new dat.GUI();
   // 创建场景
   const sence = new THREE.Scene();
   // 创建相机
   const camera = new THREE.PerspectiveCamera(
     75,
-    window.innerWidth / window.innerHeight,
+    _window.innerWidth / _window.innerHeight,
     0.1,
     1000
   );
@@ -43,7 +42,7 @@ export default function Page() {
   // 初始化一个渲染器
   const renderer = new THREE.WebGLRenderer();
   //设置渲染器尺寸
-  renderer.setSize(window.innerWidth, window.innerHeight);
+  renderer.setSize(_window.innerWidth, _window.innerHeight);
   // 将webGL渲染的canvas内容添加到body(将渲染器添加到body)
   document.body.appendChild(renderer.domElement);
   // 使用渲染器将场景通过相机渲染出来
@@ -100,28 +99,6 @@ export default function Page() {
   // 添加到场景
   sence.add(axesHelper);
 
-  window.addEventListener("resize", () => {
-    // 更新相机宽高比
-    camera.aspect = window.innerWidth / window.innerHeight;
-    // 修改相机矩阵(就是摄像机的视野以及渲染画面的范围)
-    camera.updateProjectionMatrix();
-    // 更新渲染器
-    renderer.setSize(window.innerWidth, window.innerHeight);
-    // 设置渲染器的像素比
-    renderer.setPixelRatio(window.devicePixelRatio);
-  });
-
-  window.addEventListener("dblclick", () => {
-    // tween是补间动画 isActive是补间动画的方法
-    if (tween.isActive()) {
-      // 暂停
-      tween.pause();
-    } else {
-      // 继续
-      tween.resume();
-    }
-  });
-
   //向图形化界面添加一个移动属性
   gui
     .add(cube.position, "x")
@@ -152,6 +129,30 @@ export default function Page() {
   const folder = gui.addFolder("设置立方体");
   folder.add(cube.material, "wireframe");
   // 初始化时执行下渲染函数
+
+  useEffect(() => {
+    window.addEventListener("resize", () => {
+      // 更新相机宽高比
+      camera.aspect = window.innerWidth / window.innerHeight;
+      // 修改相机矩阵(就是摄像机的视野以及渲染画面的范围)
+      camera.updateProjectionMatrix();
+      // 更新渲染器
+      renderer.setSize(window.innerWidth, window.innerHeight);
+      // 设置渲染器的像素比
+      renderer.setPixelRatio(window.devicePixelRatio);
+    });
+
+    window.addEventListener("dblclick", () => {
+      // tween是补间动画 isActive是补间动画的方法
+      if (tween.isActive()) {
+        // 暂停
+        tween.pause();
+      } else {
+        // 继续
+        tween.resume();
+      }
+    });
+  }, []);
 
   return (
     <div>
