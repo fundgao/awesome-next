@@ -14,7 +14,7 @@ import { useEffect } from "react";
  * https://juejin.cn/post/7055296508870000670
  */
 export default function Page() {
-  const _window = window || { innerWidth: 1920, innerHeight: 1080 };
+  const _window = { innerWidth: 1920, innerHeight: 1080 };
   const gui = new dat.GUI();
   // 创建场景
   const sence = new THREE.Scene();
