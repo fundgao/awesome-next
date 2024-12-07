@@ -14,14 +14,14 @@ import { useEffect } from "react";
  * https://juejin.cn/post/7055296508870000670
  */
 export default function Page() {
-  const _window = { innerWidth: 1920, innerHeight: 1080 };
+  return <></>;
   const gui = new dat.GUI();
   // 创建场景
   const sence = new THREE.Scene();
   // 创建相机
   const camera = new THREE.PerspectiveCamera(
     75,
-    _window.innerWidth / _window.innerHeight,
+    window.innerWidth / window.innerHeight,
     0.1,
     1000
   );
@@ -42,7 +42,7 @@ export default function Page() {
   // 初始化一个渲染器
   const renderer = new THREE.WebGLRenderer();
   //设置渲染器尺寸
-  renderer.setSize(_window.innerWidth, _window.innerHeight);
+  renderer.setSize(window.innerWidth, window.innerHeight);
   // 将webGL渲染的canvas内容添加到body(将渲染器添加到body)
   document.body.appendChild(renderer.domElement);
   // 使用渲染器将场景通过相机渲染出来
