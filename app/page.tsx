@@ -54,7 +54,7 @@ export default function Home() {
           <div className="time text-3xl font-semibold text-white font-sans">
             {time.getHours()}:{`00${time.getMinutes()}`.slice(-2)}
           </div>
-          <h1 className="font-semibold leading-none tracking-tighter sm:text-3xl md:text-6xl text-white">
+          <h1 className="font-semibold leading-none tracking-tighter text-6xl text-white">
             Fund
             <LineShadowText className="italic" shadowColor="white">
               OS
