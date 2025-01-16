@@ -8,7 +8,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
    */
   return [
     {
-      url: "https://goldoge.vercel.app/",
+      url: "https://ai16z.netlify.app/",
+      lastModified: new Date(),
+    },
+    {
+      url: "https://goldog.netlify.app/",
       lastModified: new Date(),
     },
   ];
