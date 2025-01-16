@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { LineShadowText } from "@/components/ui/line-shadow-text";
 import { VelocityScroll } from "@/components/ui/scroll-text";
-// import FlipClock from "@/components/FlipClock/FlipClock";
 import Link from "next/link";
 
 export default function Home() {
@@ -38,7 +37,6 @@ export default function Home() {
           </VelocityScroll>
         </div>
         <div className="content-top mt-28 flex justify-center flex-col items-center space-y-4">
-          {/* <FlipClock /> */}
           <div className="time text-3xl font-semibold text-white font-sans">
             20:32
           </div>
