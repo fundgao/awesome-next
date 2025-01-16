@@ -19,7 +19,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="relative w-full h-screen user-select-none">
+    <main className="relative w-full h-screen select-none">
       <video
         playsInline
         className="w-full h-full object-cover object-[50% 50%]"
