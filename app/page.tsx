@@ -1,9 +1,19 @@
+"use client";
+
+import { useEffect, useRef } from "react";
 import Image from "next/image";
 import { LineShadowText } from "@/components/ui/line-shadow-text";
 import { VelocityScroll } from "@/components/ui/scroll-text";
 import Link from "next/link";
 
 export default function Home() {
+  const time = useRef(new Date());
+  useEffect(() => {
+    setInterval(() => {
+      time.current = new Date();
+    }, 1000);
+  }, []);
+
   return (
     <main className="relative w-full h-screen">
       <video
@@ -38,7 +48,8 @@ export default function Home() {
         </div>
         <div className="content-top mt-28 flex justify-center flex-col items-center space-y-4">
           <div className="time text-3xl font-semibold text-white font-sans">
-            20:32
+            {time.current.getHours()}:
+            {`00${time.current.getMinutes()}`.slice(-2)}
           </div>
           <h1 className="font-semibold leading-none tracking-tighter sm:text-3xl md:text-6xl text-white">
             Fund
