@@ -19,7 +19,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="relative w-full h-screen select-none overflow-hidden">
+    <main className="relative w-full h-screen select-none overflow-hidden bg-black">
       <video
         playsInline
         className="w-[101%] max-w-[101%] h-full object-cover object-[50% 50%]"
