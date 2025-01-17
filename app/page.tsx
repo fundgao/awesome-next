@@ -62,31 +62,51 @@ export default function Home() {
           </h1>
         </div>
         <div className="content-bottom absolute w-full bottom-[100px]">
-          <div className="icons flex justify-center space-x-4">
+          <div className="icons flex justify-center gap-8">
             <Link href="https://goldog.netlify.app/" target="_blank">
-              <Image
-                src="/image/ai16z2.avif"
-                alt="ai16z Logo"
-                className="rounded-3xl"
-                width={80}
-                height={80}
-                priority
-              />
-              <p className="text-center text-white mt-1">Goldoge</p>
+              <div className="p-1 rounded-3xl hover:bg-slate-600/50 transition ease-in-out delay-350">
+                <Image
+                  src="/image/ai16z2.avif"
+                  alt="ai16z Logo"
+                  className="rounded-3xl"
+                  width={80}
+                  height={80}
+                  priority
+                />
+              </div>
+              <p className="text-center text-white mt-1 font-semibold">
+                Goldoge
+              </p>
             </Link>
+            <Link href="https://goldoge.vercel.app/" target="_blank">
+              <div className="p-1 rounded-3xl hover:bg-slate-600/50 transition ease-in-out delay-350">
+                <Image
+                  src="/image/goldoge.jpeg"
+                  alt="goldoge Logo"
+                  className="rounded-3xl"
+                  width={80}
+                  height={80}
+                  priority
+                />
+              </div>
+              <p className="text-center text-white mt-1 font-semibold">
+                金狗科技
+              </p>
+            </Link>
+            {/*  */}
           </div>
           <div className="texts flex justify-center space-x-4 text-white mt-9">
             <Link
               href="https://github.com/fundgao"
               target="_blank"
-              className="px-4 py-[4px] bg-slate-600/30 rounded-3xl"
+              className="px-4 py-[4px] bg-slate-600/30 rounded-3xl hover:underline"
             >
               Github
             </Link>
             <Link
               href="mailto:fundgao@163.com"
               target="_blank"
-              className="px-4 py-[4px] bg-slate-600/30 rounded-3xl"
+              className="px-4 py-[4px] bg-slate-600/30 rounded-3xl hover:underline"
             >
               Email
             </Link>
