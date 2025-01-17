@@ -19,10 +19,10 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="relative w-full h-screen select-none">
+    <main className="relative w-full h-screen select-none overflow-hidden">
       <video
         playsInline
-        className="w-full h-full object-cover object-[50% 50%]"
+        className="w-[101%] max-w-[101%] h-full object-cover object-[50% 50%]"
         muted
         autoPlay
         loop
@@ -54,7 +54,7 @@ export default function Home() {
           <div className="time text-3xl font-semibold text-white font-sans">
             {time.getHours()}:{`00${time.getMinutes()}`.slice(-2)}
           </div>
-          <h1 className="font-semibold leading-none tracking-tighter text-6xl text-white">
+          <h1 className="font-semibold leading-none tracking-tighter text-5xl md:text-6xl text-white">
             Fund
             <LineShadowText className="italic" shadowColor="white">
               OS
