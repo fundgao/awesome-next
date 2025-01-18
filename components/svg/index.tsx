@@ -6,7 +6,6 @@ export const Cointool = () => (
     viewBox="0 0 100 100"
     version="1.1"
   >
-    <title>logo</title>
     <g id="区块链" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
       <g id="画板" transform="translate(-97.000000, -90.000000)">
         <g id="logo" transform="translate(97.000000, 90.000000)">
