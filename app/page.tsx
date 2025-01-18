@@ -5,6 +5,7 @@ import Image from "next/image";
 import { LineShadowText } from "@/components/ui/line-shadow-text";
 import { VelocityScroll } from "@/components/ui/scroll-text";
 import Link from "next/link";
+import { Cointool } from "@/components/svg";
 
 export default function Home() {
   const [time, setTime] = useState(new Date());
@@ -93,7 +94,14 @@ export default function Home() {
                 金狗科技
               </p>
             </Link>
-            {/*  */}
+            <Link href="https://ct.app" target="_blank">
+              <div className="p-1 rounded-3xl hover:bg-slate-600/50 transition ease-in-out delay-350">
+                <Cointool />
+              </div>
+              <p className="text-center text-white mt-1 font-semibold">
+                Cointool
+              </p>
+            </Link>
           </div>
           <div className="texts flex justify-center space-x-4 text-white mt-9">
             <Link
