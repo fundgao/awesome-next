@@ -63,7 +63,7 @@ export default function Home() {
           </h1>
         </div>
         <div className="content-bottom absolute w-full bottom-[100px]">
-          <div className="icons flex justify-center gap-8">
+          <div className="icons flex justify-center flex-wrap gap-x-8 gap-y-4">
             <Link href="https://goldog.netlify.app/" target="_blank">
               <div className="p-1 rounded-3xl hover:bg-slate-600/50 transition ease-in-out delay-350">
                 <Image
