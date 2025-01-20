@@ -102,6 +102,21 @@ export default function Home() {
                 Cointool
               </p>
             </Link>
+            <Link href="https://docs.qq.com/desktop/" target="_blank">
+              <div className="p-1 rounded-3xl hover:bg-slate-600/50 transition ease-in-out delay-350">
+                <Image
+                  src="/image/wendang.png"
+                  alt="腾讯文档 Logo"
+                  className="rounded-3xl"
+                  width={80}
+                  height={80}
+                  priority
+                />
+              </div>
+              <p className="text-center text-white mt-1 font-semibold">
+                腾讯文档
+              </p>
+            </Link>
           </div>
           <div className="texts flex justify-center space-x-4 text-white mt-9">
             <Link
