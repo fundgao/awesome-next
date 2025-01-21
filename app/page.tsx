@@ -1,6 +1,5 @@
 "use client";
-
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import { LineShadowText } from "@/components/ui/line-shadow-text";
 import { VelocityScroll } from "@/components/ui/scroll-text";
@@ -18,6 +17,9 @@ export default function Home() {
       clearInterval(handle);
     };
   }, []);
+
+  const classIcon =
+    "p-1 rounded-3xl bg-slate-500/50 transition ease-in-out delay-350 hover:bg-slate-600/50 hover:scale-105";
 
   return (
     <main className="relative w-full h-screen select-none overflow-hidden bg-black">
@@ -65,7 +67,7 @@ export default function Home() {
         <div className="content-bottom absolute w-full bottom-[100px]">
           <div className="icons flex justify-center flex-wrap gap-x-8 gap-y-4">
             <Link href="https://goldog.netlify.app/" target="_blank">
-              <div className="p-1 rounded-3xl hover:bg-slate-600/50 transition ease-in-out delay-350">
+              <div className={classIcon}>
                 <Image
                   src="/image/ai16z2.avif"
                   alt="ai16z Logo"
@@ -80,7 +82,7 @@ export default function Home() {
               </p>
             </Link>
             <Link href="https://goldoge.vercel.app/" target="_blank">
-              <div className="p-1 rounded-3xl hover:bg-slate-600/50 transition ease-in-out delay-350">
+              <div className={classIcon}>
                 <Image
                   src="/image/goldoge.jpeg"
                   alt="goldoge Logo"
@@ -95,7 +97,7 @@ export default function Home() {
               </p>
             </Link>
             <Link href="https://ct.app" target="_blank">
-              <div className="p-1 rounded-3xl hover:bg-slate-600/50 transition ease-in-out delay-350">
+              <div className={classIcon}>
                 <Cointool />
               </div>
               <p className="text-center text-white mt-1 font-semibold">
@@ -103,7 +105,7 @@ export default function Home() {
               </p>
             </Link>
             <Link href="https://docs.qq.com/desktop/" target="_blank">
-              <div className="p-1 rounded-3xl hover:bg-slate-600/50 transition ease-in-out delay-350">
+              <div className={classIcon}>
                 <Image
                   src="/image/wendang.png"
                   alt="腾讯文档 Logo"
