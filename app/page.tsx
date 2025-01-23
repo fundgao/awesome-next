@@ -119,6 +119,19 @@ export default function Home() {
                 腾讯文档
               </p>
             </Link>
+            <Link href="https://fundgao.github.io/luce/" target="_blank">
+              <div className={classIcon}>
+                <Image
+                  src="/image/luce.png"
+                  alt="luce Logo"
+                  className="rounded-3xl"
+                  width={80}
+                  height={80}
+                  priority
+                />
+              </div>
+              <p className="text-center text-white mt-1 font-semibold">LUCE</p>
+            </Link>
           </div>
           <div className="texts flex justify-center space-x-4 text-white mt-9">
             <Link
