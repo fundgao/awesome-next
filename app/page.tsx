@@ -132,6 +132,42 @@ export default function Home() {
               </div>
               <p className="text-center text-white mt-1 font-semibold">LUCE</p>
             </Link>
+            <Link
+              href="https://www.mexc.com/zh-TW/support/categories/360000254192?utm_source=mexc&utm_medium=webmenu&utm_campaign=announcements"
+              target="_blank"
+            >
+              <div className={classIcon}>
+                <Image
+                  src="/image/mexc.avif"
+                  alt="luce Logo"
+                  className="rounded-3xl"
+                  width={80}
+                  height={80}
+                  priority
+                />
+              </div>
+              <p className="text-center text-white mt-1 font-semibold">
+                抹茶公告
+              </p>
+            </Link>
+            <Link
+              href="https://www.cryptohunt.ai/zh-CN/dashboard/twitterTags"
+              target="_blank"
+            >
+              <div className={classIcon}>
+                <Image
+                  src="/image/x.jpg"
+                  alt="luce Logo"
+                  className="rounded-3xl"
+                  width={80}
+                  height={80}
+                  priority
+                />
+              </div>
+              <p className="text-center text-white mt-1 font-semibold">
+                热门话题
+              </p>
+            </Link>
           </div>
           <div className="texts flex justify-center space-x-4 text-white mt-9">
             <Link
