@@ -138,7 +138,7 @@ export default function Home() {
             >
               <div className={classIcon}>
                 <Image
-                  src="/image/mexc.avif"
+                  src="/image/mexc.jpeg"
                   alt="luce Logo"
                   className="rounded-3xl"
                   width={80}
