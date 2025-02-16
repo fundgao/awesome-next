@@ -119,19 +119,6 @@ export default function Home() {
                 腾讯文档
               </p>
             </Link>
-            <Link href="https://fundgao.github.io/luce/" target="_blank">
-              <div className={classIcon}>
-                <Image
-                  src="/image/luce.png"
-                  alt="luce Logo"
-                  className="rounded-3xl"
-                  width={80}
-                  height={80}
-                  priority
-                />
-              </div>
-              <p className="text-center text-white mt-1 font-semibold">LUCE</p>
-            </Link>
             <Link
               href="https://www.mexc.com/zh-TW/support/categories/360000254192?utm_source=mexc&utm_medium=webmenu&utm_campaign=announcements"
               target="_blank"
@@ -139,7 +126,7 @@ export default function Home() {
               <div className={classIcon}>
                 <Image
                   src="/image/mexc.jpeg"
-                  alt="luce Logo"
+                  alt="mexc Logo"
                   className="rounded-3xl"
                   width={80}
                   height={80}
@@ -157,7 +144,7 @@ export default function Home() {
               <div className={classIcon}>
                 <Image
                   src="/image/x.jpg"
-                  alt="luce Logo"
+                  alt="cryptohunt Logo"
                   className="rounded-3xl"
                   width={80}
                   height={80}
@@ -166,6 +153,21 @@ export default function Home() {
               </div>
               <p className="text-center text-white mt-1 font-semibold">
                 热门话题
+              </p>
+            </Link>
+            <Link href="https://www.deepseek.com/" target="_blank">
+              <div className={classIcon}>
+                <Image
+                  src="/image/deepseek.ico"
+                  alt="deepseek Logo"
+                  className="rounded-3xl"
+                  width={80}
+                  height={80}
+                  priority
+                />
+              </div>
+              <p className="text-center text-white mt-1 font-semibold">
+                deepseek
               </p>
             </Link>
           </div>
