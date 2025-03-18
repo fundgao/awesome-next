@@ -2,6 +2,8 @@
 
 const nextConfig = {
   experimental: {
+    // DEMO https://github.com/vercel/next-view-transition-example/blob/main/app/card/page.tsx
+    viewTransition: true,
     useCache: true,
     turbo: {
       // Example: adding an alias and custom file extension
