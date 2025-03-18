@@ -1,6 +1,7 @@
-/** @type {import('next').NextConfig} */
+import type { NextConfig } from "next";
 
-const nextConfig = {
+const nextConfig: NextConfig = {
+  /* config options here */
   experimental: {
     // DEMO https://github.com/vercel/next-view-transition-example/blob/main/app/card/page.tsx
     viewTransition: true,
