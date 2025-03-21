@@ -170,6 +170,7 @@ export default function Home() {
                 deepseek
               </p>
             </Link>
+            {/* https://chainlist.org/ */}
           </div>
           <div className="texts flex justify-center space-x-4 text-white mt-9">
             <Link
