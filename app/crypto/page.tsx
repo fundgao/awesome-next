@@ -21,13 +21,15 @@ export default function Page() {
           "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=30&interval=daily"
         );
         const result = await response.json();
-        const formattedData = result.prices.map(([time, price]) => ({
-          time: dayjs(time).format("YYYY-MM-DD"),
-          open: parseFloat((price * 0.95).toFixed(2)),
-          high: parseFloat((price * 1.05).toFixed(2)),
-          low: parseFloat((price * 0.95).toFixed(2)),
-          close: price,
-        }));
+        const formattedData = result.prices.map(
+          ([time, price]: [number, number]) => ({
+            time: dayjs(time).format("YYYY-MM-DD"),
+            open: parseFloat((price * 0.95).toFixed(2)),
+            high: parseFloat((price * 1.05).toFixed(2)),
+            low: parseFloat((price * 0.95).toFixed(2)),
+            close: price,
+          })
+        );
         formattedData.pop();
         console.log("formattedData", formattedData);
         setData(formattedData);
@@ -41,7 +43,7 @@ export default function Page() {
   useEffect(() => {
     if (!chartContainerRef.current || data.length === 0) return; // 确保容器已渲染
 
-    const chartOptions = {
+    const chartOptions: any = {
       layout: {
         textColor: "black",
         background: { type: "solid", color: "white" },
