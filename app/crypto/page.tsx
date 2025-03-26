@@ -6,6 +6,7 @@ import {
   BarSeries,
   BaselineSeries,
   createChart,
+  CandlestickSeries,
 } from "lightweight-charts";
 import dayjs from "dayjs";
 
@@ -40,34 +41,41 @@ export default function Page() {
   useEffect(() => {
     if (!chartContainerRef.current || data.length === 0) return; // 确保容器已渲染
 
-    const chart = createChart(chartContainerRef.current, {
-      width: chartContainerRef.current.clientWidth,
-      height: 400,
-      layout: { backgroundColor: "#ffffff", textColor: "#000" },
-      grid: {
-        vertLines: { color: "#e1ecf2" },
-        horzLines: { color: "#e1ecf2" },
+    const chartOptions = {
+      layout: {
+        textColor: "black",
+        background: { type: "solid", color: "white" },
       },
-    });
-
-    const candleSeries = chart.addSeries(AreaSeries, {
-      lineColor: "#2962FF",
-      topColor: "#2962FF",
-      bottomColor: "rgba(41, 98, 255, 0.28)",
-    });
-    console.log("candleSeries data", data);
-
-    // candleSeries.setData(data);
-
-    const handleResize = () => {
-      chart.applyOptions({ width: chartContainerRef.current.clientWidth });
     };
-    window.addEventListener("resize", handleResize);
+    const chart = createChart(chartContainerRef.current, chartOptions);
+    // const areaSeries = chart.addSeries(AreaSeries, {
+    //   lineColor: "#2962FF",
+    //   topColor: "#2962FF",
+    //   bottomColor: "rgba(41, 98, 255, 0.28)",
+    // });
+    // areaSeries.setData([
+    //   { time: "2018-12-22", value: 32.51 },
+    //   { time: "2018-12-23", value: 31.11 },
+    //   { time: "2018-12-24", value: 27.02 },
+    //   { time: "2018-12-25", value: 27.32 },
+    //   { time: "2018-12-26", value: 25.17 },
+    //   { time: "2018-12-27", value: 28.89 },
+    //   { time: "2018-12-28", value: 25.46 },
+    //   { time: "2018-12-29", value: 23.92 },
+    //   { time: "2018-12-30", value: 22.68 },
+    //   { time: "2018-12-31", value: 22.67 },
+    // ]);
 
-    return () => {
-      window.removeEventListener("resize", handleResize);
-      chart.remove();
-    };
+    const candlestickSeries = chart.addSeries(CandlestickSeries, {
+      upColor: "#26a69a",
+      downColor: "#ef5350",
+      borderVisible: false,
+      wickUpColor: "#26a69a",
+      wickDownColor: "#ef5350",
+    });
+    candlestickSeries.setData(data);
+
+    chart.timeScale().fitContent();
   }, [data]);
 
   return <div ref={chartContainerRef} className="w-full h-[400px]" />;
