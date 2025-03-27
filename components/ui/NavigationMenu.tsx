@@ -2,9 +2,8 @@
 
 import * as React from "react";
 import Link from "next/link";
-
 import { cn } from "@/lib/utils";
-import { Mexc } from "@/components/svg/index";
+import { Mexc, DownloadIcon, GlobalOutlined } from "@/components/svg/index";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -14,6 +13,7 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
+import { Button } from "@/components/ui/button";
 
 const components: { title: string; href: string; description: string }[] = [
   {
@@ -55,8 +55,9 @@ const components: { title: string; href: string; description: string }[] = [
 
 export function NavigationMenuMexc() {
   return (
-    <NavigationMenu className="sticky top-0 w-screen max-w-full bg-[#16171a] text-accent h-16">
-      <NavigationMenuList>
+    <NavigationMenu className="sticky top-0 max-w-full bg-[#16171a] h-16 justify-start px-4">
+      <Mexc width="130" height="60" />
+      <NavigationMenuList className="px-4">
         <NavigationMenuItem>
           <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
           <NavigationMenuContent>
@@ -114,6 +115,21 @@ export function NavigationMenuMexc() {
           </Link>
         </NavigationMenuItem>
       </NavigationMenuList>
+      <div className="right flex items-center space-x-4">
+        <Button
+          variant="ghost"
+          className="text-[#f2f4f6] hover:bg-[#16171a] hover:text-[#1463ff]"
+        >
+          登录
+        </Button>
+        <Button className=" bg-[#1463ff] text-[#f2f4f6] hover:bg-[#3379ff] ">
+          注册
+        </Button>
+        <div className="icons flex items-center space-x-4">
+          <DownloadIcon />
+          <GlobalOutlined />
+        </div>
+      </div>
     </NavigationMenu>
   );
 }
