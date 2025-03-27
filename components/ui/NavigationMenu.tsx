@@ -11,7 +11,6 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-  navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import { Button } from "@/components/ui/button";
 
@@ -54,16 +53,28 @@ const components: { title: string; href: string; description: string }[] = [
 ];
 
 export function NavigationMenuMexc() {
+  const text_color = "text-[#f2f4f6]";
+  const text_color_hover = "text-[#1463ff]";
+  const bg_color = "bg-[#16171a]";
+
   return (
-    <NavigationMenu className="sticky top-0 max-w-full bg-[#16171a] h-16 justify-start px-4">
+    <NavigationMenu className="sticky top-0 max-w-full bg-[#16171a] h-16 justify-start px-4 z-50">
       <Mexc width="130" height="60" />
-      <div className="switch ml-4 flex text-[#f2f4f6] text-sm bg-[#222429] rounded-3xl">
+      <div
+        className={`switch ml-4 flex text-sm bg-[#222429] rounded-3xl ${text_color}`}
+      >
         <div className="px-4 py-1 bg-[#33373d] rounded-3xl">交易所</div>
         <div className="px-4 py-1">DEX+</div>
       </div>
-      <NavigationMenuList className="px-4">
-        <NavigationMenuItem>
-          <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
+      <NavigationMenuList className="">
+        <NavigationMenuItem
+          className={`${text_color} ${bg_color} hover:${bg_color}`}
+        >
+          <NavigationMenuTrigger
+            className={`${text_color} ${bg_color} hover:${bg_color}`}
+          >
+            买币
+          </NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
               <li className="row-span-3">
@@ -72,7 +83,6 @@ export function NavigationMenuMexc() {
                     className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
                     href="/"
                   >
-                    <Mexc />
                     <div className="mb-2 mt-4 text-lg font-medium">
                       shadcn/ui
                     </div>
@@ -96,7 +106,29 @@ export function NavigationMenuMexc() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Components</NavigationMenuTrigger>
+          <Link href="/docs" legacyBehavior passHref>
+            <NavigationMenuLink
+              className={`${text_color} ${bg_color} hover:${bg_color} text-sm hover:${text_color_hover}`}
+            >
+              市场
+            </NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <Link href="/exchange" legacyBehavior passHref>
+            <NavigationMenuLink
+              className={`${text_color} ${bg_color} hover:${bg_color} text-sm hover:${text_color_hover} ml-4`}
+            >
+              现货交易
+            </NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <NavigationMenuTrigger
+            className={`${text_color} ${bg_color} hover:${bg_color}`}
+          >
+            合约交易
+          </NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
               {components.map((component) => (
@@ -113,8 +145,10 @@ export function NavigationMenuMexc() {
         </NavigationMenuItem>
         <NavigationMenuItem>
           <Link href="/docs" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Documentation
+            <NavigationMenuLink
+              className={`${text_color} ${bg_color} hover:${bg_color} text-sm hover:${text_color_hover}`}
+            >
+              Meme+
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
@@ -122,11 +156,13 @@ export function NavigationMenuMexc() {
       <div className="right flex items-center absolute right-4">
         <Button
           variant="ghost"
-          className="text-[#f2f4f6] hover:bg-[#16171a] hover:text-[#1463ff]"
+          className={`${text_color} hover:${bg_color} hover:${text_color_hover}`}
         >
           登录
         </Button>
-        <Button className=" bg-[#1463ff] text-[#f2f4f6] hover:bg-[#3379ff] rounded-3xl h-8">
+        <Button
+          className={`bg-[#1463ff] ${text_color} hover:bg-[#3379ff] rounded-3xl h-8`}
+        >
           注册
         </Button>
         <div className="icons ml-8 flex items-center space-x-4">
