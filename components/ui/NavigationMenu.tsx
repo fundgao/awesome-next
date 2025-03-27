@@ -57,6 +57,10 @@ export function NavigationMenuMexc() {
   return (
     <NavigationMenu className="sticky top-0 max-w-full bg-[#16171a] h-16 justify-start px-4">
       <Mexc width="130" height="60" />
+      <div className="switch ml-4 flex text-[#f2f4f6] text-sm bg-[#222429] rounded-3xl">
+        <div className="px-4 py-1 bg-[#33373d] rounded-3xl">交易所</div>
+        <div className="px-4 py-1">DEX+</div>
+      </div>
       <NavigationMenuList className="px-4">
         <NavigationMenuItem>
           <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
@@ -115,17 +119,17 @@ export function NavigationMenuMexc() {
           </Link>
         </NavigationMenuItem>
       </NavigationMenuList>
-      <div className="right flex items-center space-x-4">
+      <div className="right flex items-center absolute right-4">
         <Button
           variant="ghost"
           className="text-[#f2f4f6] hover:bg-[#16171a] hover:text-[#1463ff]"
         >
           登录
         </Button>
-        <Button className=" bg-[#1463ff] text-[#f2f4f6] hover:bg-[#3379ff] ">
+        <Button className=" bg-[#1463ff] text-[#f2f4f6] hover:bg-[#3379ff] rounded-3xl h-8">
           注册
         </Button>
-        <div className="icons flex items-center space-x-4">
+        <div className="icons ml-8 flex items-center space-x-4">
           <DownloadIcon />
           <GlobalOutlined />
         </div>
