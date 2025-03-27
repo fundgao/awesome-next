@@ -1,6 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  sassOptions: {
+    additionalData: `$var: red;`,
+  },
   /* config options here */
   experimental: {
     // DEMO https://github.com/vercel/next-view-transition-example/blob/main/app/card/page.tsx
