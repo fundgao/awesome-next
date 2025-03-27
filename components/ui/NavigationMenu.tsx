@@ -55,7 +55,7 @@ const components: { title: string; href: string; description: string }[] = [
 
 export function NavigationMenuMexc() {
   return (
-    <NavigationMenu className="absolute top-0 left-0 z-50 w-screen bg-accent-foreground text-accent">
+    <NavigationMenu className="sticky top-0 w-screen max-w-full bg-[#16171a] text-accent h-16">
       <NavigationMenuList>
         <NavigationMenuItem>
           <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>

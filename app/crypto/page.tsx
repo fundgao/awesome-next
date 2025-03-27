@@ -16,8 +16,9 @@ export default function Page() {
   const [data, setData] = useState([]);
 
   return (
-    <div className="relative w-full h-screen bg-[#0d0e0f]">
+    <>
       <NavigationMenuMexc />
-    </div>
+      <div className="relative w-full h-screen bg-[#0d0e0f]"></div>
+    </>
   );
 }
