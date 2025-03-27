@@ -1,8 +1,43 @@
-$title-color: #f2f4f6;
-
 .ExchangePage {
-  color: $title-color;
+  height: calc(100vh - 64px);
+  padding-top: 4px;
+  color: #f2f4f6;
   font-size: 12px;
-  background-color: #16171a;
+  background-color: #0d0e0f;
   display: grid;
+  gap: 4px;
+  grid-template-areas:
+    "headline headline orderbook trade"
+    "markets kline orderbook trade"
+    "orders orders orders balance";
+  grid-template-columns: 280px 1fr 280px 280px; /* 左侧固定宽度，中间自适应，右侧固定宽度 */
+  grid-template-rows: 52px 780px 324px;
+  :global(.wrapper-headline) {
+    grid-area: headline;
+    background-color: #16171a;
+  }
+  :global(.wrapper-markets) {
+    grid-area: markets;
+    background-color: #16171a;
+  }
+  :global(.wrapper-kline) {
+    grid-area: kline;
+    background-color: #16171a;
+  }
+  :global(.wrapper-orderbook) {
+    grid-area: orderbook;
+    background-color: #16171a;
+  }
+  :global(.wrapper-trade) {
+    grid-area: trade;
+    background-color: #16171a;
+  }
+  :global(.wrapper-orders) {
+    grid-area: orders;
+    background-color: #16171a;
+  }
+  :global(.wrapper-balance) {
+    grid-area: balance;
+    background-color: #16171a;
+  }
 }
