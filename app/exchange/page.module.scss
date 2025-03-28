@@ -10,8 +10,25 @@
     "headline headline orderbook trade"
     "markets kline orderbook trade"
     "orders orders orders balance";
-  grid-template-columns: 280px 1fr 280px 280px; /* 左侧固定宽度，中间自适应，右侧固定宽度 */
+  grid-template-columns: 280px 1fr 280px 280px;
   grid-template-rows: 52px 780px 324px;
+  @media (max-width: 1700px) {
+    grid-template-areas:
+      "headline orderbook trade"
+      "kline orderbook trade"
+      "orders orders balance";
+    grid-template-columns: 1fr 280px 280px;
+    grid-template-rows: 52px 780px 324px;
+  }
+  @media (max-width: 1024px) {
+    grid-template-areas:
+      "headline headline"
+      "kline trade"
+      "orderbook balance"
+      "orders orders";
+    grid-template-columns: 1fr 280px;
+    grid-template-rows: 52px 380px 300px 400px;
+  }
   :global(.wrapper-headline) {
     grid-area: headline;
     background-color: #16171a;
@@ -19,6 +36,9 @@
   :global(.wrapper-markets) {
     grid-area: markets;
     background-color: #16171a;
+    @media (max-width: 1700px) {
+      display: none;
+    }
   }
   :global(.wrapper-kline) {
     grid-area: kline;

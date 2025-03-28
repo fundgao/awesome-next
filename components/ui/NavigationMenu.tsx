@@ -59,7 +59,9 @@ export function NavigationMenuMexc() {
 
   return (
     <NavigationMenu className="sticky top-0 max-w-full bg-[#16171a] h-16 justify-start px-4 z-50">
-      <Mexc width="130" height="60" />
+      <Link href="/crypto" target="_self">
+        <Mexc width="130" height="60" />
+      </Link>
       <div
         className={`switch ml-4 flex text-sm bg-[#222429] rounded-3xl ${text_color}`}
       >
