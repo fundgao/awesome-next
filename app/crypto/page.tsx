@@ -81,14 +81,14 @@ export default function Page() {
               上币最多最快
             </p>
             <div className="hot-ranks flex gap-3 mt-12">
-              <div className="left-card flex-1 rounded-2xl bg-[#111621] py-4 px-8 hover:bg-[#131722] cursor-pointer">
-                <div className="title flex gap-6 h-14 items-center">
+              <div className="left-card rounded-2xl bg-[#111621] py-4 px-3 hover:bg-[#131722] cursor-pointer w-[694px]">
+                <div className="title flex gap-6 h-14 px-5 items-center">
                   <p className="text-[#f2f4f6] text-xl">热门合约</p>
                   <p className="text-[#6e7583] text-xl">热币榜</p>
                 </div>
                 <div className="hot-list">
-                  <div className="coin-row h-16 flex justify-between items-center">
-                    <div className="coin-icon flex gap-4 h-7 items-center">
+                  <div className="coin-row px-5 h-16 flex justify-between items-center hover:bg-[#b4bfd60f] rounded-xl">
+                    <div className="coin-icon flex gap-4 h-7 items-center w-36">
                       <Image
                         src="/icon/icon-btc.png"
                         alt="coin icon"
@@ -99,14 +99,18 @@ export default function Page() {
                       />
                       <p className="text-[#f2f4f6]">BTCUSDT</p>
                     </div>
-                    <p className="price text-[#f2f4f6] text-[16px]">87,200.8</p>
-                    <p className="rise text-[#0bba74] text-[16px]">+0.31%</p>
+                    <p className="price text-[#f2f4f6] text-[16px] w-20">
+                      87,200.8
+                    </p>
+                    <p className="rise text-[#0bba74] text-[16px] w-20">
+                      +0.31%
+                    </p>
                     <button className="buy-button text-[#1463ff] text-sm h-8 border border-solid border-[#1463ff] px-6 rounded-2xl hover:bg-[#1463ff] hover:text-[#f2f4f6]">
                       交易
                     </button>
                   </div>
-                  <div className="coin-row h-16 flex justify-between items-center">
-                    <div className="coin-icon flex gap-4 h-7 items-center">
+                  <div className="coin-row px-5 h-16 flex justify-between items-center hover:bg-[#b4bfd60f] rounded-xl">
+                    <div className="coin-icon flex gap-4 h-7 items-center w-36">
                       <Image
                         src="/icon/icon-eth.png"
                         alt="coin icon"
@@ -117,14 +121,18 @@ export default function Page() {
                       />
                       <p className="text-[#f2f4f6]">ETHUSDT</p>
                     </div>
-                    <p className="price text-[#f2f4f6] text-[16px]">2,012.24</p>
-                    <p className="rise text-[#0bba74] text-[16px]">+0.38%</p>
+                    <p className="price text-[#f2f4f6] text-[16px] w-20">
+                      2,012.24
+                    </p>
+                    <p className="rise text-[#0bba74] text-[16px] w-20">
+                      +0.38%
+                    </p>
                     <button className="buy-button text-[#1463ff] text-sm h-8 border border-solid border-[#1463ff] px-6 rounded-2xl hover:bg-[#1463ff] hover:text-[#f2f4f6]">
                       交易
                     </button>
                   </div>
-                  <div className="coin-row h-16 flex justify-between items-center">
-                    <div className="coin-icon flex gap-4 h-7 items-center">
+                  <div className="coin-row px-5 h-16 flex justify-between items-center hover:bg-[#b4bfd60f] rounded-xl">
+                    <div className="coin-icon flex gap-4 h-7 items-center w-36">
                       <Image
                         src="/icon/icon-btc.png"
                         alt="coin icon"
@@ -135,14 +143,18 @@ export default function Page() {
                       />
                       <p className="text-[#f2f4f6]">BNBUSDT</p>
                     </div>
-                    <p className="price text-[#f2f4f6] text-[16px]">634.98</p>
-                    <p className="rise text-[#ff4761] text-[16px]">-0.30%</p>
+                    <p className="price text-[#f2f4f6] text-[16px] w-20">
+                      634.98
+                    </p>
+                    <p className="rise text-[#ff4761] text-[16px] w-20">
+                      -0.30%
+                    </p>
                     <button className="buy-button text-[#1463ff] text-sm h-8 border border-solid border-[#1463ff] px-6 rounded-2xl hover:bg-[#1463ff] hover:text-[#f2f4f6]">
                       交易
                     </button>
                   </div>
-                  <div className="coin-row h-16 flex justify-between items-center">
-                    <div className="coin-icon flex gap-4 h-7 items-center">
+                  <div className="coin-row px-5 h-16 flex justify-between items-center hover:bg-[#b4bfd60f] rounded-xl">
+                    <div className="coin-icon flex gap-4 h-7 items-center w-36">
                       <Image
                         src="/icon/icon-sol.png"
                         alt="coin icon"
@@ -153,14 +165,18 @@ export default function Page() {
                       />
                       <p className="text-[#f2f4f6]">SOLUSDT</p>
                     </div>
-                    <p className="price text-[#f2f4f6] text-[16px]">138.8</p>
-                    <p className="rise text-[#0bba74] text-[16px]">+0.80%</p>
+                    <p className="price text-[#f2f4f6] text-[16px] w-20">
+                      138.8
+                    </p>
+                    <p className="rise text-[#0bba74] text-[16px] w-20">
+                      +0.80%
+                    </p>
                     <button className="buy-button text-[#1463ff] text-sm h-8 border border-solid border-[#1463ff] px-6 rounded-2xl hover:bg-[#1463ff] hover:text-[#f2f4f6]">
                       交易
                     </button>
                   </div>
-                  <div className="coin-row h-16 flex justify-between items-center">
-                    <div className="coin-icon flex gap-4 h-7 items-center">
+                  <div className="coin-row px-5 h-16 flex justify-between items-center hover:bg-[#b4bfd60f] rounded-xl">
+                    <div className="coin-icon flex gap-4 h-7 items-center w-36">
                       <Image
                         src="/icon/icon-tut.png"
                         alt="coin icon"
@@ -171,14 +187,18 @@ export default function Page() {
                       />
                       <p className="text-[#f2f4f6]">TUTUSDT</p>
                     </div>
-                    <p className="price text-[#f2f4f6] text-[16px]">0.458</p>
-                    <p className="rise text-[#0bba74] text-[16px]">+187.95%</p>
+                    <p className="price text-[#f2f4f6] text-[16px] w-20">
+                      0.458
+                    </p>
+                    <p className="rise text-[#0bba74] text-[16px] w-20">
+                      +187.95%
+                    </p>
                     <button className="buy-button text-[#1463ff] text-sm h-8 border border-solid border-[#1463ff] px-6 rounded-2xl hover:bg-[#1463ff] hover:text-[#f2f4f6]">
                       交易
                     </button>
                   </div>
-                  <div className="coin-row h-16 flex justify-between items-center">
-                    <div className="coin-icon flex gap-4 h-7 items-center">
+                  <div className="coin-row px-5 h-16 flex justify-between items-center hover:bg-[#b4bfd60f] rounded-xl">
+                    <div className="coin-icon flex gap-4 h-7 items-center w-36">
                       <Image
                         src="/icon/icon-sui.png"
                         alt="coin icon"
@@ -189,14 +209,18 @@ export default function Page() {
                       />
                       <p className="text-[#f2f4f6]">SUIUSDT</p>
                     </div>
-                    <p className="price text-[#f2f4f6] text-[16px]">2.75</p>
-                    <p className="rise text-[#0bba74] text-[16px]">+0.78%</p>
+                    <p className="price text-[#f2f4f6] text-[16px] w-20">
+                      2.75
+                    </p>
+                    <p className="rise text-[#0bba74] text-[16px] w-20">
+                      +0.78%
+                    </p>
                     <button className="buy-button text-[#1463ff] text-sm h-8 border border-solid border-[#1463ff] px-6 rounded-2xl hover:bg-[#1463ff] hover:text-[#f2f4f6]">
                       交易
                     </button>
                   </div>
-                  <div className="coin-row h-16 flex justify-between items-center">
-                    <div className="coin-icon flex gap-4 h-7 items-center">
+                  <div className="coin-row px-5 h-16 flex justify-between items-center hover:bg-[#b4bfd60f] rounded-xl">
+                    <div className="coin-icon flex gap-4 h-7 items-center w-36">
                       <Image
                         src="/icon/icon-pi.png"
                         alt="coin icon"
@@ -207,37 +231,146 @@ export default function Page() {
                       />
                       <p className="text-[#f2f4f6]">PIUSDT</p>
                     </div>
-                    <p className="price text-[#f2f4f6] text-[16px]">0.84</p>
-                    <p className="rise text-[#0bba74] text-[16px]">+2.87%</p>
+                    <p className="price text-[#f2f4f6] text-[16px] w-20">
+                      0.84
+                    </p>
+                    <p className="rise text-[#0bba74] text-[16px] w-20">
+                      +2.87%
+                    </p>
                     <button className="buy-button text-[#1463ff] text-sm h-8 border border-solid border-[#1463ff] px-6 rounded-2xl hover:bg-[#1463ff] hover:text-[#f2f4f6]">
                       交易
                     </button>
                   </div>
                 </div>
               </div>
-              <div className="right-card flex-1 h-36 rounded-2xl bg-[#111621] py-4 px-8 hover:bg-[#131722] cursor-pointer">
-                <div className="title flex gap-6 h-14 items-center">
-                  <p className="text-[#f2f4f6] text-xl">热门合约</p>
-                  <p className="text-[#6e7583] text-xl">热币榜</p>
-                </div>
-                <div className="hot-list">
-                  <div className="coin-row h-16 flex justify-between items-center">
-                    <div className="coin-icon flex gap-4 h-7 items-center">
-                      <Image
-                        src="/icon/icon-btc.png"
-                        alt="coin icon"
-                        className="rounded-full"
-                        width={28}
-                        height={28}
-                        priority
-                      />
-                      <p className="text-[#f2f4f6]">BTCUSDT</p>
+              <div className="right-card w-[494px]">
+                <div className="rounded-2xl bg-[#111621] py-4 px-3 hover:bg-[#131722] cursor-pointer">
+                  <div className="title flex gap-6 h-14 px-5 items-center">
+                    <p className="text-[#f2f4f6] text-xl">现货涨幅榜</p>
+                    <p className="text-[#6e7583] text-xl">合约涨幅榜</p>
+                  </div>
+                  <div className="hot-list">
+                    <div className="coin-row px-5 h-16 flex justify-between items-center hover:bg-[#b4bfd60f] rounded-xl">
+                      <div className="coin-icon flex gap-4 h-7 items-center w-36">
+                        <Image
+                          src="/icon/icon-hbd.png"
+                          alt="coin icon"
+                          className="rounded-full"
+                          width={28}
+                          height={28}
+                          priority
+                        />
+                        <p className="text-[#f2f4f6]">HBDUSDT</p>
+                      </div>
+                      <p className="price text-[#f2f4f6] text-[16px] w-20">
+                        0.822
+                      </p>
+                      <p className="rise text-[#0bba74] text-[16px] w-20">
+                        +1,995.50%
+                      </p>
                     </div>
-                    <p className="price text-[#f2f4f6] text-[16px]">87,200.8</p>
-                    <p className="rise text-[#0bba74] text-[16px]">+0.31%</p>
-                    <button className="buy-button text-[#1463ff] text-sm h-8 border border-solid border-[#487ee9] px-6 rounded-2xl">
-                      交易
-                    </button>
+                    <div className="coin-row px-5 h-16 flex justify-between items-center hover:bg-[#b4bfd60f] rounded-xl">
+                      <div className="coin-icon flex gap-4 h-7 items-center w-36">
+                        <Image
+                          src="/icon/icon-kilo.png"
+                          alt="coin icon"
+                          className="rounded-full"
+                          width={28}
+                          height={28}
+                          priority
+                        />
+                        <p className="text-[#f2f4f6]">KILOUSDT</p>
+                      </div>
+                      <p className="price text-[#f2f4f6] text-[16px] w-20">
+                        0.08871
+                      </p>
+                      <p className="rise text-[#0bba74] text-[16px] w-20">
+                        +491.40%
+                      </p>
+                    </div>
+                    <div className="coin-row px-5 h-16 flex justify-between items-center hover:bg-[#b4bfd60f] rounded-xl">
+                      <div className="coin-icon flex gap-4 h-7 items-center w-36">
+                        <Image
+                          src="/icon/icon-wal.png"
+                          alt="coin icon"
+                          className="rounded-full"
+                          width={28}
+                          height={28}
+                          priority
+                        />
+                        <p className="text-[#f2f4f6]">WALUSDT</p>
+                      </div>
+                      <p className="price text-[#f2f4f6] text-[16px] w-20">
+                        0.4341
+                      </p>
+                      <p className="rise text-[#0bba74] text-[16px] w-20">
+                        +117.45%
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="mt-3 rounded-2xl bg-[#111621] py-4 px-3 hover:bg-[#131722] cursor-pointer">
+                  <div className="title flex gap-6 h-14 px-5 items-center">
+                    <p className="text-[#f2f4f6] text-xl">新币榜</p>
+                  </div>
+                  <div className="hot-list">
+                    <div className="coin-row px-5 h-16 flex justify-between items-center hover:bg-[#b4bfd60f] rounded-xl">
+                      <div className="coin-icon flex gap-4 h-7 items-center w-36">
+                        <Image
+                          src="/icon/icon-corn.png"
+                          alt="coin icon"
+                          className="rounded-full"
+                          width={28}
+                          height={28}
+                          priority
+                        />
+                        <p className="text-[#f2f4f6]">CORNUSDT</p>
+                      </div>
+                      <p className="price text-[#f2f4f6] text-[16px] w-20">
+                        即将上线
+                      </p>
+                      <p className="rise text-[#1463ff] text-[16px] w-20">
+                        00:48:30
+                      </p>
+                    </div>
+                    <div className="coin-row px-5 h-16 flex justify-between items-center hover:bg-[#b4bfd60f] rounded-xl">
+                      <div className="coin-icon flex gap-4 h-7 items-center w-36">
+                        <Image
+                          src="/icon/icon-k.png"
+                          alt="coin icon"
+                          className="rounded-full"
+                          width={28}
+                          height={28}
+                          priority
+                        />
+                        <p className="text-[#f2f4f6]">KUSDT</p>
+                      </div>
+                      <p className="price text-[#f2f4f6] text-[16px] w-20">
+                        即将上线
+                      </p>
+                      <p className="rise text-[#1463ff] text-[16px] w-20">
+                        77:48:10
+                      </p>
+                    </div>
+                    <div className="coin-row px-5 h-16 flex justify-between items-center hover:bg-[#b4bfd60f] rounded-xl">
+                      <div className="coin-icon flex gap-4 h-7 items-center w-36">
+                        <Image
+                          src="/icon/icon-hbd.png"
+                          alt="coin icon"
+                          className="rounded-full"
+                          width={28}
+                          height={28}
+                          priority
+                        />
+                        <p className="text-[#f2f4f6]">HBDUSDT</p>
+                      </div>
+                      <p className="price text-[#f2f4f6] text-[16px] w-20">
+                        0.822
+                      </p>
+                      <p className="rise text-[#0bba74] text-[16px] w-20">
+                        +1,995.50%
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
