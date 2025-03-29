@@ -122,3 +122,514 @@ export const GlobalOutlined = ({ color = "#fff" }) => (
     <path d="M12 22C6.477 22 2 17.523 2 12C2 6.477 6.477 2 12 2C17.523 2 22 6.477 22 12C22 17.523 17.523 22 12 22ZM9.71 19.667C8.72341 17.5743 8.15187 15.3102 8.027 13H4.062C4.25659 14.5389 4.89392 15.9882 5.89657 17.1717C6.89922 18.3552 8.22401 19.2221 9.71 19.667V19.667ZM10.03 13C10.181 15.439 10.878 17.73 12 19.752C13.1523 17.6766 13.8254 15.3695 13.97 13H10.03V13ZM19.938 13H15.973C15.8481 15.3102 15.2766 17.5743 14.29 19.667C15.776 19.2221 17.1008 18.3552 18.1034 17.1717C19.1061 15.9882 19.7434 14.5389 19.938 13V13ZM4.062 11H8.027C8.15187 8.68979 8.72341 6.42569 9.71 4.333C8.22401 4.77788 6.89922 5.64475 5.89657 6.8283C4.89392 8.01184 4.25659 9.4611 4.062 11V11ZM10.031 11H13.969C13.8248 8.6306 13.152 6.32353 12 4.248C10.8477 6.32345 10.1746 8.63052 10.03 11H10.031ZM14.29 4.333C15.2766 6.42569 15.8481 8.68979 15.973 11H19.938C19.7434 9.4611 19.1061 8.01184 18.1034 6.8283C17.1008 5.64475 15.776 4.77788 14.29 4.333V4.333Z"></path>
   </svg>
 );
+
+export const MxQrcode = () => (
+  <svg width="140" height="140" viewBox="0 0 33 33">
+    <circle opacity="1" r="0.5" fill="#fff" cx="0.5" cy="11.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="0.5" cy="17.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="0.5" cy="21.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="0.5" cy="23.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="1.5" cy="9.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="1.5" cy="13.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="1.5" cy="15.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="1.5" cy="16.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="1.5" cy="17.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="1.5" cy="19.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="1.5" cy="21.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="1.5" cy="22.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="1.5" cy="24.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="2.5" cy="8.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="2.5" cy="10.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="2.5" cy="11.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="2.5" cy="13.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="2.5" cy="14.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="2.5" cy="16.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="2.5" cy="20.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="2.5" cy="22.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="2.5" cy="23.5"></circle>
+    <rect fill="#fff" width="3" height="3" x="2" y="2" rx="0.8" ry="0.8"></rect>
+    <path
+      d="M32.048565,-1.29480038e-15 L67.951435,1.29480038e-15 C79.0954192,-7.52316311e-16 83.1364972,1.16032014 87.2105713,3.3391588 C91.2846454,5.51799746 94.4820025,8.71535463 96.6608412,12.7894287 C98.8396799,16.8635028 100,20.9045808 100,32.048565 L100,67.951435 C100,79.0954192 98.8396799,83.1364972 96.6608412,87.2105713 C94.4820025,91.2846454 91.2846454,94.4820025 87.2105713,96.6608412 C83.1364972,98.8396799 79.0954192,100 67.951435,100 L32.048565,100 C20.9045808,100 16.8635028,98.8396799 12.7894287,96.6608412 C8.71535463,94.4820025 5.51799746,91.2846454 3.3391588,87.2105713 C1.16032014,83.1364972 5.01544207e-16,79.0954192 -8.63200256e-16,67.951435 L8.63200256e-16,32.048565 C-5.01544207e-16,20.9045808 1.16032014,16.8635028 3.3391588,12.7894287 C5.51799746,8.71535463 8.71535463,5.51799746 12.7894287,3.3391588 C16.8635028,1.16032014 20.9045808,7.52316311e-16 32.048565,-1.29480038e-15 Z"
+      stroke="#fff"
+      strokeWidth="16.666666666666668"
+      fill="none"
+      transform="translate(0.5,0.5) scale(0.06,0.06)"
+    ></path>
+    <circle opacity="1" r="0.5" fill="#fff" cx="3.5" cy="9.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="3.5" cy="10.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="3.5" cy="12.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="3.5" cy="13.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="3.5" cy="14.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="3.5" cy="15.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="3.5" cy="17.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="3.5" cy="18.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="3.5" cy="20.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="3.5" cy="21.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="3.5" cy="24.5"></circle>
+    <rect
+      fill="#fff"
+      width="3"
+      height="3"
+      x="2"
+      y="28"
+      rx="0.8"
+      ry="0.8"
+    ></rect>
+    <path
+      d="M32.048565,-1.29480038e-15 L67.951435,1.29480038e-15 C79.0954192,-7.52316311e-16 83.1364972,1.16032014 87.2105713,3.3391588 C91.2846454,5.51799746 94.4820025,8.71535463 96.6608412,12.7894287 C98.8396799,16.8635028 100,20.9045808 100,32.048565 L100,67.951435 C100,79.0954192 98.8396799,83.1364972 96.6608412,87.2105713 C94.4820025,91.2846454 91.2846454,94.4820025 87.2105713,96.6608412 C83.1364972,98.8396799 79.0954192,100 67.951435,100 L32.048565,100 C20.9045808,100 16.8635028,98.8396799 12.7894287,96.6608412 C8.71535463,94.4820025 5.51799746,91.2846454 3.3391588,87.2105713 C1.16032014,83.1364972 5.01544207e-16,79.0954192 -8.63200256e-16,67.951435 L8.63200256e-16,32.048565 C-5.01544207e-16,20.9045808 1.16032014,16.8635028 3.3391588,12.7894287 C5.51799746,8.71535463 8.71535463,5.51799746 12.7894287,3.3391588 C16.8635028,1.16032014 20.9045808,7.52316311e-16 32.048565,-1.29480038e-15 Z"
+      stroke="#fff"
+      strokeWidth="16.666666666666668"
+      fill="none"
+      transform="translate(0.5,26.5) scale(0.06,0.06)"
+    ></path>
+    <circle opacity="1" r="0.5" fill="#fff" cx="4.5" cy="8.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="4.5" cy="9.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="4.5" cy="10.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="4.5" cy="11.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="4.5" cy="12.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="4.5" cy="13.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="4.5" cy="15.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="4.5" cy="16.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="4.5" cy="18.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="4.5" cy="19.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="4.5" cy="20.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="4.5" cy="24.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="5.5" cy="8.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="5.5" cy="9.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="5.5" cy="10.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="5.5" cy="13.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="5.5" cy="16.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="5.5" cy="17.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="5.5" cy="19.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="5.5" cy="21.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="6.5" cy="8.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="6.5" cy="10.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="6.5" cy="12.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="6.5" cy="14.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="6.5" cy="16.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="6.5" cy="18.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="6.5" cy="20.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="6.5" cy="22.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="6.5" cy="24.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="7.5" cy="9.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="7.5" cy="11.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="7.5" cy="12.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="7.5" cy="13.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="7.5" cy="14.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="7.5" cy="15.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="7.5" cy="16.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="7.5" cy="17.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="7.5" cy="21.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="7.5" cy="23.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="8.5" cy="1.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="8.5" cy="4.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="8.5" cy="6.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="8.5" cy="8.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="8.5" cy="9.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="8.5" cy="12.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="8.5" cy="13.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="8.5" cy="14.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="8.5" cy="15.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="8.5" cy="16.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="8.5" cy="17.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="8.5" cy="19.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="8.5" cy="20.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="8.5" cy="21.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="8.5" cy="25.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="8.5" cy="27.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="8.5" cy="28.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="8.5" cy="30.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="9.5" cy="1.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="9.5" cy="4.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="9.5" cy="12.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="9.5" cy="15.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="9.5" cy="18.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="9.5" cy="23.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="9.5" cy="25.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="9.5" cy="29.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="9.5" cy="30.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="9.5" cy="31.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="10.5" cy="0.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="10.5" cy="1.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="10.5" cy="4.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="10.5" cy="5.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="10.5" cy="6.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="10.5" cy="7.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="10.5" cy="13.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="10.5" cy="15.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="10.5" cy="16.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="10.5" cy="17.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="10.5" cy="20.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="10.5" cy="21.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="10.5" cy="22.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="10.5" cy="23.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="10.5" cy="24.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="10.5" cy="25.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="10.5" cy="29.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="11.5" cy="1.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="11.5" cy="2.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="11.5" cy="4.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="11.5" cy="5.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="11.5" cy="8.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="11.5" cy="9.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="11.5" cy="10.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="11.5" cy="13.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="11.5" cy="14.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="11.5" cy="17.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="11.5" cy="18.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="11.5" cy="20.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="11.5" cy="21.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="11.5" cy="23.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="11.5" cy="24.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="11.5" cy="25.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="11.5" cy="26.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="12.5" cy="6.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="12.5" cy="8.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="12.5" cy="20.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="12.5" cy="24.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="12.5" cy="26.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="12.5" cy="28.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="12.5" cy="29.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="12.5" cy="32.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="13.5" cy="1.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="13.5" cy="2.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="13.5" cy="4.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="13.5" cy="7.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="13.5" cy="8.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="13.5" cy="9.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="13.5" cy="10.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="13.5" cy="21.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="13.5" cy="22.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="13.5" cy="27.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="13.5" cy="29.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="14.5" cy="3.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="14.5" cy="5.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="14.5" cy="6.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="14.5" cy="7.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="14.5" cy="8.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="14.5" cy="10.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="14.5" cy="25.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="14.5" cy="26.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="14.5" cy="30.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="14.5" cy="31.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="15.5" cy="0.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="15.5" cy="1.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="15.5" cy="5.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="15.5" cy="7.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="15.5" cy="8.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="15.5" cy="9.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="15.5" cy="11.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="15.5" cy="21.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="15.5" cy="22.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="15.5" cy="24.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="15.5" cy="25.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="15.5" cy="26.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="15.5" cy="27.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="16.5" cy="0.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="16.5" cy="2.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="16.5" cy="3.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="16.5" cy="6.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="16.5" cy="7.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="16.5" cy="8.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="16.5" cy="11.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="16.5" cy="21.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="16.5" cy="22.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="16.5" cy="23.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="16.5" cy="24.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="16.5" cy="26.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="16.5" cy="28.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="16.5" cy="31.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="17.5" cy="0.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="17.5" cy="1.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="17.5" cy="2.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="17.5" cy="10.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="17.5" cy="21.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="17.5" cy="23.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="17.5" cy="29.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="17.5" cy="30.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="18.5" cy="0.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="18.5" cy="1.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="18.5" cy="2.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="18.5" cy="6.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="18.5" cy="7.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="18.5" cy="8.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="18.5" cy="9.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="18.5" cy="11.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="18.5" cy="23.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="18.5" cy="24.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="18.5" cy="25.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="18.5" cy="27.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="18.5" cy="29.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="18.5" cy="31.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="19.5" cy="1.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="19.5" cy="2.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="19.5" cy="4.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="19.5" cy="7.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="19.5" cy="8.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="19.5" cy="9.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="19.5" cy="22.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="19.5" cy="23.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="19.5" cy="24.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="19.5" cy="25.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="19.5" cy="27.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="19.5" cy="32.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="20.5" cy="1.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="20.5" cy="2.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="20.5" cy="6.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="20.5" cy="7.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="20.5" cy="9.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="20.5" cy="10.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="20.5" cy="12.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="20.5" cy="22.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="20.5" cy="23.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="20.5" cy="24.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="20.5" cy="26.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="20.5" cy="29.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="21.5" cy="0.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="21.5" cy="1.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="21.5" cy="4.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="21.5" cy="5.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="21.5" cy="7.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="21.5" cy="9.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="21.5" cy="11.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="21.5" cy="12.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="21.5" cy="13.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="21.5" cy="15.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="21.5" cy="16.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="21.5" cy="19.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="21.5" cy="20.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="21.5" cy="24.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="21.5" cy="27.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="21.5" cy="29.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="21.5" cy="30.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="21.5" cy="31.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="22.5" cy="2.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="22.5" cy="3.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="22.5" cy="4.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="22.5" cy="5.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="22.5" cy="6.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="22.5" cy="8.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="22.5" cy="11.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="22.5" cy="14.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="22.5" cy="15.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="22.5" cy="18.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="22.5" cy="20.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="22.5" cy="22.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="22.5" cy="23.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="22.5" cy="28.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="22.5" cy="29.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="22.5" cy="30.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="22.5" cy="31.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="23.5" cy="2.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="23.5" cy="4.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="23.5" cy="8.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="23.5" cy="9.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="23.5" cy="11.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="23.5" cy="14.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="23.5" cy="17.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="23.5" cy="21.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="23.5" cy="23.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="23.5" cy="24.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="23.5" cy="25.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="23.5" cy="26.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="23.5" cy="28.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="23.5" cy="32.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="24.5" cy="0.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="24.5" cy="1.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="24.5" cy="3.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="24.5" cy="4.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="24.5" cy="6.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="24.5" cy="7.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="24.5" cy="9.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="24.5" cy="10.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="24.5" cy="12.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="24.5" cy="15.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="24.5" cy="17.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="24.5" cy="18.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="24.5" cy="19.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="24.5" cy="20.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="24.5" cy="21.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="24.5" cy="22.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="24.5" cy="24.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="24.5" cy="25.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="24.5" cy="26.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="24.5" cy="27.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="24.5" cy="28.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="24.5" cy="30.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="24.5" cy="31.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="24.5" cy="32.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="25.5" cy="8.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="25.5" cy="10.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="25.5" cy="12.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="25.5" cy="13.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="25.5" cy="14.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="25.5" cy="15.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="25.5" cy="16.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="25.5" cy="17.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="25.5" cy="18.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="25.5" cy="20.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="25.5" cy="24.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="25.5" cy="28.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="25.5" cy="30.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="25.5" cy="31.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="26.5" cy="9.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="26.5" cy="11.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="26.5" cy="14.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="26.5" cy="16.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="26.5" cy="20.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="26.5" cy="21.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="26.5" cy="22.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="26.5" cy="24.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="26.5" cy="26.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="26.5" cy="28.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="26.5" cy="29.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="26.5" cy="31.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="27.5" cy="11.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="27.5" cy="13.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="27.5" cy="14.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="27.5" cy="17.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="27.5" cy="20.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="27.5" cy="21.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="27.5" cy="24.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="27.5" cy="28.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="27.5" cy="31.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="28.5" cy="8.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="28.5" cy="9.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="28.5" cy="10.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="28.5" cy="15.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="28.5" cy="18.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="28.5" cy="20.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="28.5" cy="24.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="28.5" cy="25.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="28.5" cy="26.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="28.5" cy="27.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="28.5" cy="28.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="28.5" cy="29.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="28.5" cy="32.5"></circle>
+    <rect
+      fill="#fff"
+      width="3"
+      height="3"
+      x="28"
+      y="2"
+      rx="0.8"
+      ry="0.8"
+    ></rect>
+    <path
+      d="M32.048565,-1.29480038e-15 L67.951435,1.29480038e-15 C79.0954192,-7.52316311e-16 83.1364972,1.16032014 87.2105713,3.3391588 C91.2846454,5.51799746 94.4820025,8.71535463 96.6608412,12.7894287 C98.8396799,16.8635028 100,20.9045808 100,32.048565 L100,67.951435 C100,79.0954192 98.8396799,83.1364972 96.6608412,87.2105713 C94.4820025,91.2846454 91.2846454,94.4820025 87.2105713,96.6608412 C83.1364972,98.8396799 79.0954192,100 67.951435,100 L32.048565,100 C20.9045808,100 16.8635028,98.8396799 12.7894287,96.6608412 C8.71535463,94.4820025 5.51799746,91.2846454 3.3391588,87.2105713 C1.16032014,83.1364972 5.01544207e-16,79.0954192 -8.63200256e-16,67.951435 L8.63200256e-16,32.048565 C-5.01544207e-16,20.9045808 1.16032014,16.8635028 3.3391588,12.7894287 C5.51799746,8.71535463 8.71535463,5.51799746 12.7894287,3.3391588 C16.8635028,1.16032014 20.9045808,7.52316311e-16 32.048565,-1.29480038e-15 Z"
+      stroke="#fff"
+      strokeWidth="16.666666666666668"
+      fill="none"
+      transform="translate(26.5,0.5) scale(0.06,0.06)"
+    ></path>
+    <circle opacity="1" r="0.5" fill="#fff" cx="29.5" cy="9.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="29.5" cy="10.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="29.5" cy="12.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="29.5" cy="13.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="29.5" cy="18.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="29.5" cy="19.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="29.5" cy="21.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="29.5" cy="22.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="29.5" cy="25.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="29.5" cy="26.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="29.5" cy="27.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="29.5" cy="28.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="29.5" cy="29.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="29.5" cy="30.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="29.5" cy="31.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="30.5" cy="11.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="30.5" cy="13.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="30.5" cy="16.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="30.5" cy="19.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="30.5" cy="24.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="30.5" cy="26.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="30.5" cy="27.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="30.5" cy="28.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="30.5" cy="29.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="30.5" cy="30.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="31.5" cy="8.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="31.5" cy="11.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="31.5" cy="13.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="31.5" cy="14.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="31.5" cy="15.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="31.5" cy="16.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="31.5" cy="17.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="31.5" cy="19.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="31.5" cy="20.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="31.5" cy="21.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="31.5" cy="23.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="32.5" cy="9.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="32.5" cy="13.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="32.5" cy="14.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="32.5" cy="16.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="32.5" cy="20.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="32.5" cy="21.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="32.5" cy="22.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="32.5" cy="23.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="32.5" cy="24.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="32.5" cy="30.5"></circle>
+    <circle opacity="1" r="0.5" fill="#fff" cx="32.5" cy="32.5"></circle>
+    <image
+      // src="/mexc/coin.png"
+      xlinkHref="/mexc/mx_logo.png"
+      width="6.6000000000000005"
+      x="13.2"
+      y="13.2"
+    ></image>
+  </svg>
+);
+
+export const PhoneBG = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="634"
+    height="634"
+    viewBox="0 0 634 634"
+    fill="#102650"
+  >
+    <g filter="url(#filter0_f_10534_7727)">
+      <circle cx="317" cy="317" r="117" fill="inherit"></circle>
+    </g>
+    <defs>
+      <filter
+        id="filter0_f_10534_7727"
+        x="0"
+        y="0"
+        width="634"
+        height="634"
+        filterUnits="userSpaceOnUse"
+        color-interpolation-filters="sRGB"
+      >
+        <feFlood floodOpacity="0" result="BackgroundImageFix"></feFlood>
+        <feBlend
+          mode="normal"
+          in="SourceGraphic"
+          in2="BackgroundImageFix"
+          result="shape"
+        ></feBlend>
+        <feGaussianBlur
+          stdDeviation="100"
+          result="effect1_foregroundBlur_10534_7727"
+        ></feGaussianBlur>
+      </filter>
+    </defs>
+  </svg>
+);
+
+export const TipsIcon = () => (
+  <svg width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
+    <path d="M7.99999 4.42758C8.47676 4.42758 8.86327 4.79319 8.86327 5.24419C8.86327 5.69518 8.47676 6.06079 7.99999 6.06079C7.52322 6.06079 7.13672 5.69518 7.13672 5.24419C7.13672 4.79319 7.52322 4.42758 7.99999 4.42758Z"></path>
+    <path d="M8.00096 12.093C7.58675 12.093 7.25096 11.7572 7.25096 11.343V7.64106C7.25096 7.22685 7.58675 6.89106 8.00096 6.89106C8.41518 6.89106 8.75096 7.22685 8.75096 7.64106V11.343C8.75096 11.7572 8.41518 12.093 8.00096 12.093Z"></path>
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M15 8C15 11.866 11.866 15 8 15C4.13401 15 1 11.866 1 8C1 4.13401 4.13401 1 8 1C11.866 1 15 4.13401 15 8ZM13.5 8C13.5 4.96243 11.0376 2.5 8 2.5C4.96243 2.5 2.5 4.96243 2.5 8C2.5 11.0376 4.96243 13.5 8 13.5C11.0376 13.5 13.5 11.0376 13.5 8Z"
+    ></path>
+  </svg>
+);
+
+export const Windows = ({ width = "32", height = "32", color = "#f2f4f6" }) => (
+  <svg width={width} height={height} fill={color} viewBox="0 0 1024 1024">
+    <path d="M125.5424 242.3296v221.7984L368.64 455.0656V191.7952l-243.0464 50.4832z m345.3952-78.7968V450.048l428.8512-15.8208V74.496l-428.8512 89.088zM125.5424 560.128v221.7984l243.0464 50.5344v-263.2192l-243.0464-9.1136z m345.3952 14.1312v286.464l428.8512 89.0368v-359.68l-428.8512-15.8208z"></path>
+  </svg>
+);

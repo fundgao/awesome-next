@@ -4,6 +4,7 @@ import React, { useEffect, useRef, useState } from "react";
 import dayjs from "dayjs";
 import { NavigationMenuMexc } from "@/components/ui/NavigationMenu";
 import Image from "next/image";
+import { MxQrcode, PhoneBG, TipsIcon, Windows } from "@/components/svg/index";
 
 export default function Page() {
   return (
@@ -380,6 +381,144 @@ export default function Page() {
             <h2 className="text-[#f2f4f6] text-4xl text-center">
               持有 MX 享多重权益
             </h2>
+            <div className="mx-income flex gap-3 mt-12">
+              <div className="left-card rounded-2xl bg-[#111621] p-6 hover:bg-[#131722] cursor-pointer w-[734px] flex items-center justify-between">
+                <div className="left">
+                  <Image
+                    src="/mexc/mx-partin.png"
+                    alt="coin icon"
+                    width={48}
+                    height={48}
+                    priority
+                  />
+                  <p className="text-[#f2f4f6] text-xl mt-4">
+                    交易费率最高享 5 折
+                  </p>
+                  <p className="text-[#87909f] text-sm mt-12 flex gap-2 items-center">
+                    活动累计年收益率
+                    <TipsIcon />
+                  </p>
+                  <p className="text-[#f2f4f6] text-4xl mt-6">52.21%</p>
+                </div>
+                <Image
+                  src="/mexc/mx-rise.png"
+                  alt="coin icon"
+                  width={400}
+                  height={197}
+                  priority
+                />
+              </div>
+              <div className="right-card w-[454px]">
+                <div className="rounded-2xl bg-[#111621] py-7 px-6 hover:bg-[#131722] cursor-pointer">
+                  <Image
+                    src="/mexc/mx-trade.png"
+                    alt="coin icon"
+                    width={48}
+                    height={48}
+                    priority
+                  />
+                  <p className="text-[#f2f4f6] text-xl mt-4">
+                    交易费率最高享 5 折
+                  </p>
+                </div>
+                <div className="mt-3 rounded-2xl bg-[#111621] py-7 px-6 hover:bg-[#131722] cursor-pointer">
+                  <Image
+                    src="/mexc/mx-invite.png"
+                    alt="coin icon"
+                    width={48}
+                    height={48}
+                    priority
+                  />
+                  <p className="text-[#f2f4f6] text-xl mt-4">最高 70% 返佣</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="wrapper-three-measures mt-28">
+            <h2 className="text-[#f2f4f6] text-4xl text-center">
+              三大举措守护资产安全
+            </h2>
+            <p className="mt-4 text-[#87909f] text-xl text-center">
+              即时帮您监控资产风险，平台原因造成损失快速全赔
+            </p>
+            <div className="mt-12 flex gap-3 justify-between">
+              <div className="rounded-2xl bg-[#111621] flex-1 pt-10 pb-12 text-center hover:bg-[#131722] cursor-pointer">
+                <Image
+                  className="m-auto"
+                  src="/mexc/coin.png"
+                  alt="coin icon"
+                  width={100}
+                  height={100}
+                  priority
+                />
+                <p className="text-[#f2f4f6] text-xl mt-3">储备金率超 100%</p>
+                <p className="text-[#87909f] text-sm mt-6">
+                  资产安全透明，您不用担心挤兑风险
+                </p>
+              </div>
+              <div className="rounded-2xl bg-[#111621] flex-1 pt-10 pb-12 text-center hover:bg-[#131722] cursor-pointer">
+                <Image
+                  className="m-auto"
+                  src="/mexc/lock.png"
+                  alt="coin icon"
+                  width={100}
+                  height={100}
+                  priority
+                />
+                <p className="text-[#f2f4f6] text-xl mt-3">资产安全储存</p>
+                <p className="text-[#87909f] text-sm mt-6">
+                  结合冷存储与热钱包策略，确保您的资产存储安全
+                </p>
+              </div>
+              <div className="rounded-2xl bg-[#111621] flex-1 pt-10 pb-12 text-center hover:bg-[#131722] cursor-pointer">
+                <Image
+                  className="m-auto"
+                  src="/mexc/shield.png"
+                  alt="coin icon"
+                  width={100}
+                  height={100}
+                  priority
+                />
+                <p className="text-[#f2f4f6] text-xl mt-3">合约保险基金</p>
+                <p className="text-[#87909f] text-sm mt-6">
+                  补偿超过保证金的亏损，让您可以放心交易
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="wrapper-three-measures mt-28">
+            <h2 className="text-[#f2f4f6] text-4xl text-center">
+              随时随地开启交易
+            </h2>
+            <div className="flex">
+              <div className="phone">
+                <PhoneBG />
+                <Image
+                  className="m-auto"
+                  src="/mexc/phone.png"
+                  alt="coin icon"
+                  width={330}
+                  height={542}
+                  priority
+                />
+              </div>
+              <div className="download">
+                <div className="qrcode">
+                  <MxQrcode />
+                </div>
+                <div className="other">
+                  <Image
+                    className="m-auto"
+                    src="/mexc/android.png"
+                    alt="coin icon"
+                    width={32}
+                    height={32}
+                    priority
+                  />
+                  <Windows />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
