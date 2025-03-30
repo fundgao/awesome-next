@@ -598,7 +598,7 @@ export const PhoneBG = () => (
         width="634"
         height="634"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
         <feFlood floodOpacity="0" result="BackgroundImageFix"></feFlood>
         <feBlend

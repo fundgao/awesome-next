@@ -490,11 +490,11 @@ export default function Page() {
             <h2 className="text-[#f2f4f6] text-4xl text-center">
               随时随地开启交易
             </h2>
-            <div className="flex">
-              <div className="phone">
+            <div className="flex items-center justify-center">
+              <div className="phone relative">
                 <PhoneBG />
                 <Image
-                  className="m-auto"
+                  className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
                   src="/mexc/phone.png"
                   alt="coin icon"
                   width={330}
@@ -503,19 +503,40 @@ export default function Page() {
                 />
               </div>
               <div className="download">
-                <div className="qrcode">
+                <div className="qrcode flex gap-9 items-center rounded-2xl bg-[#111621] hover:bg-[#131722] cursor-pointer p-10">
                   <MxQrcode />
+                  <div className="">
+                    <p className="text-[#87909f] text-sm">扫码下载App</p>
+                    <p className="text-[#f2f4f6] text-xl mt-1">
+                      iOS 和 Android
+                    </p>
+                  </div>
                 </div>
-                <div className="other">
-                  <Image
-                    className="m-auto"
-                    src="/mexc/android.png"
-                    alt="coin icon"
-                    width={32}
-                    height={32}
-                    priority
-                  />
-                  <Windows />
+                <div className="other rounded-2xl bg-[#111621] hover:bg-[#131722] cursor-pointer p-10 mt-3">
+                  <div className="flex gap-9 items-center">
+                    <div className="android flex gap-2 items-center">
+                      <Image
+                        className="m-auto"
+                        src="/mexc/android.png"
+                        alt="coin icon"
+                        width={32}
+                        height={32}
+                        priority
+                      />
+                      <p className="text-[#f2f4f6] text-lg hover:text-[#1463ff]">
+                        下载 MEXC
+                      </p>
+                    </div>
+                    <div className="windows flex gap-2 items-center">
+                      <Windows />
+                      <p className="text-[#f2f4f6] text-lg hover:text-[#1463ff]">
+                        Windows
+                      </p>
+                    </div>
+                  </div>
+                  <p className="text-[#87909f] text-sm mt-10 hover:text-[#1463ff]">
+                    更多选项 &gt;
+                  </p>
                 </div>
               </div>
             </div>
