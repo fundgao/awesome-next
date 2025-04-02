@@ -167,7 +167,7 @@ export function NavigationMenuMexc() {
         >
           注册
         </Button>
-        <div className="icons ml-8 flex items-center space-x-4">
+        <div className="icons ml-8 flex items-center space-x-4 cursor-pointer">
           <DownloadIcon />
           <GlobalOutlined />
         </div>
