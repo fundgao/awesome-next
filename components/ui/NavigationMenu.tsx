@@ -8,6 +8,7 @@ import {
   DownloadIcon,
   GlobalOutlined,
   MoonOutlined,
+  SettingOutlined,
 } from "@/components/svg/index";
 import {
   NavigationMenu,
@@ -176,6 +177,7 @@ export function NavigationMenuMexc() {
           <DownloadIcon />
           <GlobalOutlined />
           <MoonOutlined />
+          <SettingOutlined />
         </div>
       </div>
     </NavigationMenu>
