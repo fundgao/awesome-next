@@ -3,7 +3,12 @@
 import * as React from "react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
-import { Mexc, DownloadIcon, GlobalOutlined } from "@/components/svg/index";
+import {
+  Mexc,
+  DownloadIcon,
+  GlobalOutlined,
+  MoonOutlined,
+} from "@/components/svg/index";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -170,6 +175,7 @@ export function NavigationMenuMexc() {
         <div className="icons ml-8 flex items-center space-x-4 cursor-pointer">
           <DownloadIcon />
           <GlobalOutlined />
+          <MoonOutlined />
         </div>
       </div>
     </NavigationMenu>
