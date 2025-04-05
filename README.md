@@ -25,6 +25,7 @@
 - [openai docs](https://platform.openai.com/docs/quickstart?context=node)
 - [传统经典编程与 AIGC 的融合](https://juejin.cn/post/7371731578962493474)
 - LangChain https://js.langchain.com/docs/introduction
+- vercel ai https://sdk.vercel.ai/
 
 ## Crypto
 
