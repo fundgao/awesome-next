@@ -1,7 +1,5 @@
 "use client";
 
-import React, { useEffect, useRef, useState } from "react";
-import dayjs from "dayjs";
 import { NavigationMenuMexc } from "@/components/ui/NavigationMenu";
 import Image from "next/image";
 import { MxQrcode, PhoneBG, TipsIcon, Windows } from "@/components/svg/index";
@@ -397,7 +395,7 @@ export default function Page() {
                   </p>
                   <p className="text-[#87909f] text-sm mt-12 flex gap-2 items-center">
                     活动累计年收益率
-                    <TipsIcon />
+                    <TipsIcon color="#87909f" />
                   </p>
                   <p className="text-[#f2f4f6] text-4xl mt-6">52.21%</p>
                 </div>

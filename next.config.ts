@@ -1,23 +1,6 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  webpack(config) {
-    config.module.rules.push({
-      test: /\.module\.scss$/,
-      use: [
-        {
-          loader: "css-loader",
-          options: {
-            modules: {
-              mode: "global", // 默认全局作用域
-            },
-          },
-        },
-        "sass-loader",
-      ],
-    });
-    return config;
-  },
   sassOptions: {
     additionalData: `$var: red;`,
   },
