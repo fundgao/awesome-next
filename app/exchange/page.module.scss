@@ -55,6 +55,11 @@
   :global(.wrapper-orders) {
     grid-area: orders;
     background-color: #16171a;
+    :global(.orders-header) {
+      padding-left: 16px;
+      padding-right: 16px;
+      border-bottom: 1px solid #222429;
+    }
   }
   :global(.wrapper-balance) {
     grid-area: balance;
