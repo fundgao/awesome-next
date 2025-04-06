@@ -3,7 +3,7 @@
 import { generateText, LanguageModelV1, streamText } from "ai";
 import Form from "next/form";
 import { createDeepSeek } from "@ai-sdk/deepseek";
-import { Suspense } from "react";
+import { Suspense, useEffect, useState } from "react";
 
 /**
  * DeepSpeed
@@ -21,30 +21,42 @@ interface SearchParams {
   query: string;
 }
 
-const DeepSeek = async ({
+const DeepSeek = ({
   searchParams,
 }: {
   searchParams: Promise<SearchParams>;
 }) => {
-  const { query } = await searchParams;
-
-  if (!query) {
-    return null;
-  }
+  const [query, setQuery] = useState<string | null>(null);
+  const [text, setText] = useState<string | null>(null);
 
   const deepseek = createDeepSeek({
     apiKey: process.env.DEEPSEEK_API_KEY ?? "",
   });
 
-  const reader = await streamText({
-    model: deepseek("deepseek-chat") as LanguageModelV1,
-    prompt: query,
-  });
+  const fetchData = async () => {
+    const { query } = await searchParams;
+    if (!query) return;
+    setQuery(query);
 
-  const { text } = await generateText({
-    model: deepseek("deepseek-chat"),
-    prompt: "Write a vegetarian lasagna recipe for 4 people.",
-  });
+    const reader = await streamText({
+      model: deepseek("deepseek-chat") as LanguageModelV1,
+      prompt: query,
+    });
+
+    const { text } = await generateText({
+      model: deepseek("deepseek-chat") as LanguageModelV1,
+      prompt: query,
+    });
+    setText(text);
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, [searchParams]);
+
+  if (!query || !text) {
+    return null;
+  }
 
   return (
     <div className="space-y-4">
@@ -68,12 +80,25 @@ export default function Page({
   searchParams: Promise<SearchParams>;
 }) {
   return (
-    <Form action="/chat">
-      <input name="query" />
-      <button type="submit">提交</button>
-      <Suspense fallback={"加载中..."}>
-        <DeepSeek searchParams={searchParams} />
-      </Suspense>
-    </Form>
+    <div className="flex flex-col h-screen max-w-2xl mx-auto p-4">
+      <h1 className="text-2xl font-bold mb-4">DeepSeek Chat</h1>
+      <div className="flex-1 overflow-y-auto mb-4 space-y-4">
+        <Suspense
+          fallback={
+            <div className="flex justify-center items-center h-full">
+              <div className="animate-pulse text-muted-foreground">
+                Loading...
+              </div>
+            </div>
+          }
+        >
+          <DeepSeek searchParams={searchParams} />
+        </Suspense>
+      </div>
+      <Form action="/chat">
+        <input name="query" />
+        <button type="submit">提交</button>
+      </Form>
+    </div>
   );
 }
