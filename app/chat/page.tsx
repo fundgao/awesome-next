@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useOptimistic, useRef, useState } from "react";
-import { getAssitantMessageContentStream } from "./actions";
+import { getAssistantMessageContentStream } from "./actions";
 import { Message } from "./types";
 import { useFormStatus } from "react-dom";
 
@@ -85,7 +85,10 @@ export default function Chat() {
             });
 
             const assitantMessageContentStream =
-              await getAssitantMessageContentStream([...messages, userMessage]);
+              await getAssistantMessageContentStream([
+                ...messages,
+                userMessage,
+              ]);
 
             let assistantMessageContent = "";
             for await (const assitantMessageContentChunk of assitantMessageContentStream) {
