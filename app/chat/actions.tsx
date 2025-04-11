@@ -4,9 +4,9 @@ import { streamText, generateText, LanguageModelV1 } from "ai";
 import { Message } from "./types";
 import { openai } from "@ai-sdk/openai";
 import { Suspense, useEffect, useState } from "react";
-import { createDeepSeek } from "@ai-sdk/deepseek";
+import { createDeepSeek, deepseek } from "@ai-sdk/deepseek";
 
-const getTextStream = async (messages: Message[]) => {
+const getTextStreamFromChatgpt = async (messages: Message[]) => {
   const { textStream } = await streamText({
     model: openai("gpt-4o"),
     messages,
@@ -15,7 +15,21 @@ const getTextStream = async (messages: Message[]) => {
   return textStream;
 };
 
-export const getAssitantMessageContentStream = async (
+const getTextStreamFromDeepseek = async (messages: Message[]) => {
+  const { textStream } = await streamText({
+    model: deepseek("deepseek-chat") as LanguageModelV1,
+    messages,
+  });
+
+  return textStream;
+};
+
+const getTextStream =
+  process.env.NODE_ENV === "development"
+    ? getTextStreamFromDeepseek
+    : getTextStreamFromChatgpt;
+
+export const getAssistantMessageContentStream = async (
   messages: Message[]
 ): Promise<AsyncGenerator<string>> => {
   const textStream = await getTextStream(messages);
