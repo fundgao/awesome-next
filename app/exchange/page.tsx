@@ -10,9 +10,49 @@ export default function Page() {
       <div className={styles.ExchangePage}>
         <div className="wrapper-headline">Mexc</div>
         <div className="wrapper-markets">自选币列表</div>
-        <div className="wrapper-kline">图表</div>
-        <div className="wrapper-orderbook">委托订单</div>
-        <div className="wrapper-trade">现货交易</div>
+        <div className="wrapper-kline">
+          <div
+            className="orderbook-header flex items-center gap-4 h-10 text-sm px-4"
+            style={{ borderBottom: "1px solid #222429" }}
+          >
+            <p className="orderbook-header-title cursor-pointer text-[#f2f4f6]">
+              图表
+            </p>
+            <p className="orderbook-header-title text-[#87909f] hover:text-[#f2f4f6] cursor-pointer">
+              币种资料
+            </p>
+          </div>
+        </div>
+        <div className="wrapper-orderbook">
+          <div
+            className="orderbook-header flex items-center gap-4 h-10 text-sm px-4"
+            style={{ borderBottom: "1px solid #222429" }}
+          >
+            <p className="orderbook-header-title cursor-pointer text-[#f2f4f6]">
+              委托订单
+            </p>
+            <p className="orderbook-header-title text-[#87909f] hover:text-[#f2f4f6] cursor-pointer">
+              最新成交
+            </p>
+          </div>
+          <div className="orderbook-content mt-2 px-4">
+            <div className="orderbook-content-title flex justify-between items-center gap-4 text-[#87909f]">
+              <p className="orderbook-content-title-text">价格(USDT)</p>
+              <p className="orderbook-content-title-text">数量(MX))</p>
+              <p className="orderbook-content-title-text">金额(USDT)</p>
+            </div>
+          </div>
+        </div>
+        <div className="wrapper-trade">
+          <div
+            className="orderbook-header flex items-center gap-4 h-10 text-sm px-4"
+            style={{ borderBottom: "1px solid #222429" }}
+          >
+            <p className="orderbook-header-title cursor-pointer text-[#f2f4f6]">
+              现货交易
+            </p>
+          </div>
+        </div>
         <div className="wrapper-orders">
           <div className="orders-header flex justify-between items-center">
             <div className="left flex gap-4 h-10 text-sm items-center">
