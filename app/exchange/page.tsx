@@ -1,6 +1,6 @@
 import { NavigationMenuMexc } from "@/components/ui/NavigationMenu";
 import styles from "./page.module.scss";
-import { TipsIcon } from "@/components/svg/index";
+import { TipsIcon, PlayCircleOutlined } from "@/components/svg/index";
 import { Checkbox } from "@/components/ui/checkbox";
 
 export default function Page() {
@@ -8,7 +8,11 @@ export default function Page() {
     <>
       <NavigationMenuMexc />
       <div className={styles.ExchangePage}>
-        <div className="wrapper-headline">Mexc</div>
+        <div className="wrapper-headline px-4 flex items-center relative">
+          <div className="cursor-pointer absolute right-4">
+            <PlayCircleOutlined />
+          </div>
+        </div>
         <div className="wrapper-markets">自选币列表</div>
         <div className="wrapper-kline">
           <div
