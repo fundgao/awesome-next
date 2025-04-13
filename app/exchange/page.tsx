@@ -1,7 +1,12 @@
 import { NavigationMenuMexc } from "@/components/ui/NavigationMenu";
 import styles from "./page.module.scss";
-import { TipsIcon, PlayCircleOutlined } from "@/components/svg/index";
+import {
+  TipsIcon,
+  PlayCircleOutlined,
+  StarFilled,
+} from "@/components/svg/index";
 import { Checkbox } from "@/components/ui/checkbox";
+import Image from "next/image";
 
 export default function Page() {
   return (
@@ -9,6 +14,21 @@ export default function Page() {
       <NavigationMenuMexc />
       <div className={styles.ExchangePage}>
         <div className="wrapper-headline px-4 flex items-center relative">
+          <div className="flex items-center gap-2">
+            <StarFilled />
+            <Image
+              src="/mexc/mxlogo.png"
+              alt="goldoge Logo"
+              width={24}
+              height={24}
+              priority
+            />
+            <div className="MX">
+              <h1 className="text-[#f2f4f6] text-base font-bold">MX/USDT</h1>
+              <p className="text-[#87909f] text-xs">MX Token</p>
+            </div>
+            <div className="line h-10 w-[1px] bg-[#2b2e33] ml-2 mr-4"></div>
+          </div>
           <div className="cursor-pointer absolute right-4">
             <PlayCircleOutlined />
           </div>
