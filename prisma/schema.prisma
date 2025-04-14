@@ -1,0 +1,29 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Message {
+  id          Int      @id @default(autoincrement())
+  role        String   // Will store "user" or "assistant"
+  content     String   @db.Text  // Using Text type for potentially long messages
+  conversationId String // To group related messages together
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  // Relation to Conversation
+  conversation Conversation @relation(fields: [conversationId], references: [id])
+
+  @@index([conversationId]) // Index for faster queries when fetching by conversationId
+}
+
+model Conversation {
+  id        String    @id @default(uuid()) // Using UUID for conversation ID
+  messages  Message[]
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+}
