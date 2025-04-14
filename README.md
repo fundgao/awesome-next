@@ -121,8 +121,7 @@ v12.22.6
 - [更强大的 :nth-child 选择器](https://juejin.cn/post/7385929329640177676) `.cc:nth-child(2 of .cc) {}` `.cc:not(.cc ~ .cc) {}`
 - [CSS 工具资源汇总](https://github.com/liuhp/fe-blog/issues/2)
 
-## Deploy on Vercel
+## prisma on scripts
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- `"postinstall": "prisma generate"`
+- `"vercel-build": "prisma generate && prisma migrate deploy && next build"`
