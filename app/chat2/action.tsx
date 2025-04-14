@@ -7,7 +7,7 @@ import { ReactNode, Suspense } from "react";
 import { GET_NEXT_STATE } from "./GET_NEXT_STATE";
 import { State } from "./GET_NEXT_STATE";
 import { compiler } from "markdown-to-jsx";
-import prisma from "@/app/db/prisma";
+// import prisma from "@/app/db/prisma";
 
 const getTextStream = async (messages: Message[]) => {
   const { textStream } = await streamText({
@@ -40,13 +40,13 @@ const ParseToMarkdown = ({ block }: { block: string }) => {
 };
 
 const addMessage = async (conversationId: string, message: Message) => {
-  await prisma.message.create({
-    data: {
-      role: message.role,
-      content: message.content,
-      conversationId,
-    },
-  });
+  // await prisma.message.create({
+  //   data: {
+  //     role: message.role,
+  //     content: message.content,
+  //     conversationId,
+  //   },
+  // });
 };
 
 const Spinner = () => {
