@@ -8,6 +8,7 @@
 - Web3.0 [$ npm install --save @solana/web3.js](https://github.com/solana-labs/solana-web3.js)
 - [Ant Design](https://ant-design.antgroup.com/index-cn)
 - [Magic UI](https://magicui.design/docs/installation/react)
+- [motion-primitives](https://motion-primitives.com/docs/installation)
 - [NextUI](https://nextui.org/docs/guide/installation)
 - [tailwindcss](https://tailwindcss.com/docs/installation)
 - [白嫖 - 图床](https://molunerfinn.com/PicGo/)

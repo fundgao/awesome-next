@@ -5,6 +5,7 @@ import { LineShadowText } from "@/components/ui/line-shadow-text";
 import { VelocityScroll } from "@/components/ui/scroll-text";
 import Link from "next/link";
 import { Cointool } from "@/components/svg";
+import { SlidingNumber } from "@/components/ui/sliding-number";
 
 export default function Home() {
   const [time, setTime] = useState(new Date());
@@ -54,8 +55,14 @@ export default function Home() {
           </VelocityScroll>
         </div>
         <div className="content-top mt-28 flex justify-center flex-col items-center space-y-4">
-          <div className="time text-3xl font-semibold text-white font-sans">
-            {time.getHours()}:{`00${time.getMinutes()}`.slice(-2)}
+          <div className="time text-3xl font-semibold text-white font-sans flex items-center gap-2">
+            <SlidingNumber value={time.getHours()} padStart={true} />:
+            <SlidingNumber
+              value={Number(`00${time.getMinutes()}`.slice(-2))}
+              padStart={true}
+            />
+            :
+            <SlidingNumber value={time.getSeconds()} padStart={true} />
           </div>
           <h1 className="font-semibold leading-none tracking-tighter text-5xl md:text-6xl text-white">
             Fund
