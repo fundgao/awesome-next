@@ -6,6 +6,8 @@ import { openai } from "@ai-sdk/openai";
 import { ReactNode, Suspense } from "react";
 import { GET_NEXT_STATE } from "./GET_NEXT_STATE";
 import { State } from "./GET_NEXT_STATE";
+import { compiler } from "markdown-to-jsx";
+import prisma from "@/app/db/prisma";
 
 const getTextStream = async (messages: Message[]) => {
   const { textStream } = await streamText({
@@ -33,11 +35,76 @@ const getAssistantMessageContentStream = async (
   return generateText();
 };
 
-export const getMessageReactNode = async (message: Message) => {
+const ParseToMarkdown = ({ block }: { block: string }) => {
+  return compiler(block, { wrapper: null });
+};
+
+const addMessage = async (conversationId: string, message: Message) => {
+  await prisma.message.create({
+    data: {
+      role: message.role,
+      content: message.content,
+      conversationId,
+    },
+  });
+};
+
+const Spinner = () => {
   return (
-    <Suspense fallback={<div>Loading...</div>}>
-      <StreamableRenderFromMessage message={message} />
-    </Suspense>
+    <>
+      <style>
+        {`
+          @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+          }
+        `}
+      </style>
+      <div
+        style={{
+          animation: "spin 0.5s linear infinite",
+          borderRadius: "50%",
+          height: "1rem",
+          width: "1rem",
+          border: "2px solid #d1d5db",
+          borderTopColor: "#4b5563",
+        }}
+      />
+    </>
+  );
+};
+
+const StreamableParse = async ({
+  generateBlocks,
+  buffer,
+  conversationId,
+}: {
+  generateBlocks: AsyncGenerator<string>;
+  buffer: string;
+  conversationId: string;
+}) => {
+  const { done, value: block } = await generateBlocks.next();
+  if (done) {
+    await addMessage(conversationId, {
+      role: "assistant",
+      content: buffer,
+    });
+    return;
+  }
+
+  return (
+    <>
+      <div>
+        <ParseToMarkdown block={block} />
+      </div>
+      <Suspense fallback={<Spinner />}>
+        <StreamableParse
+          generateBlocks={generateBlocks}
+          buffer={buffer + "\n\n" + block}
+          conversationId={conversationId}
+        />
+      </Suspense>
+    </>
   );
 };
 
@@ -95,4 +162,12 @@ const StreamableRenderFromMessage = async ({
   };
 
   return <RecursivelyRender />;
+};
+
+export const getMessageReactNode = async (message: Message) => {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <StreamableRenderFromMessage message={message} />
+    </Suspense>
+  );
 };
