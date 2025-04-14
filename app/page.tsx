@@ -6,6 +6,7 @@ import { VelocityScroll } from "@/components/ui/scroll-text";
 import Link from "next/link";
 import { Cointool } from "@/components/svg";
 import { SlidingNumber } from "@/components/ui/sliding-number";
+import { Tilt } from "@/components/ui/tilt";
 
 export default function Home() {
   const [time, setTime] = useState(new Date());
@@ -20,7 +21,7 @@ export default function Home() {
   }, []);
 
   const classIcon =
-    "p-1 rounded-3xl bg-slate-500/50 transition ease-in-out delay-350 hover:bg-slate-600/50 hover:scale-105";
+    "p-1 rounded-3xl bg-slate-500/60 transition ease-in-out delay-350 hover:bg-slate-600/70";
 
   return (
     <main className="relative w-full h-screen select-none overflow-hidden bg-black">
@@ -74,54 +75,62 @@ export default function Home() {
         <div className="content-bottom absolute w-full bottom-[100px]">
           <div className="icons flex justify-center flex-wrap gap-x-8 gap-y-4">
             <Link href="https://goldog.netlify.app/" target="_blank">
-              <div className={classIcon}>
-                <Image
-                  src="/image/ai16z2.avif"
-                  alt="ai16z Logo"
-                  className="rounded-3xl"
-                  width={80}
-                  height={80}
-                  priority
-                />
-              </div>
+              <Tilt rotationFactor={30} isRevese>
+                <div className={classIcon}>
+                  <Image
+                    src="/image/ai16z2.avif"
+                    alt="ai16z Logo"
+                    className="rounded-3xl"
+                    width={80}
+                    height={80}
+                    priority
+                  />
+                </div>
+              </Tilt>
               <p className="text-center text-white mt-1 font-semibold">
                 Goldoge
               </p>
             </Link>
             <Link href="https://goldoge.vercel.app/" target="_blank">
-              <div className={classIcon}>
-                <Image
-                  src="/image/goldoge.jpeg"
-                  alt="goldoge Logo"
-                  className="rounded-3xl"
-                  width={80}
-                  height={80}
-                  priority
-                />
-              </div>
+              <Tilt rotationFactor={30} isRevese>
+                <div className={classIcon}>
+                  <Image
+                    src="/image/goldoge.jpeg"
+                    alt="goldoge Logo"
+                    className="rounded-3xl"
+                    width={80}
+                    height={80}
+                    priority
+                  />
+                </div>
+              </Tilt>
               <p className="text-center text-white mt-1 font-semibold">
                 金狗科技
               </p>
             </Link>
             <Link href="https://ct.app" target="_blank">
-              <div className={classIcon}>
-                <Cointool />
-              </div>
+              <Tilt rotationFactor={30} isRevese>
+                <div className={classIcon}>
+                  <Cointool />
+                </div>
+              </Tilt>
               <p className="text-center text-white mt-1 font-semibold">
                 Cointool
               </p>
             </Link>
             <Link href="https://docs.qq.com/desktop/" target="_blank">
-              <div className={classIcon}>
-                <Image
-                  src="/image/wendang.png"
-                  alt="腾讯文档 Logo"
-                  className="rounded-3xl"
-                  width={80}
-                  height={80}
-                  priority
-                />
-              </div>
+              <Tilt rotationFactor={30} isRevese>
+                <div className={classIcon}>
+                  <Image
+                    src="/image/wendang.png"
+                    alt="腾讯文档 Logo"
+                    className="rounded-3xl"
+                    width={80}
+                    height={80}
+                    priority
+                  />
+                </div>
+              </Tilt>
               <p className="text-center text-white mt-1 font-semibold">
                 腾讯文档
               </p>
@@ -130,16 +139,18 @@ export default function Home() {
               href="https://www.mexc.com/zh-TW/support/categories/360000254192?utm_source=mexc&utm_medium=webmenu&utm_campaign=announcements"
               target="_blank"
             >
-              <div className={classIcon}>
-                <Image
-                  src="/image/mexc.jpeg"
-                  alt="mexc Logo"
-                  className="rounded-3xl"
-                  width={80}
-                  height={80}
-                  priority
-                />
-              </div>
+              <Tilt rotationFactor={30} isRevese>
+                <div className={classIcon}>
+                  <Image
+                    src="/image/mexc.jpeg"
+                    alt="mexc Logo"
+                    className="rounded-3xl"
+                    width={80}
+                    height={80}
+                    priority
+                  />
+                </div>
+              </Tilt>
               <p className="text-center text-white mt-1 font-semibold">
                 抹茶公告
               </p>
@@ -148,31 +159,35 @@ export default function Home() {
               href="https://www.cryptohunt.ai/zh-CN/dashboard/twitterTags"
               target="_blank"
             >
-              <div className={classIcon}>
-                <Image
-                  src="/image/x.jpg"
-                  alt="cryptohunt Logo"
-                  className="rounded-3xl"
-                  width={80}
-                  height={80}
-                  priority
-                />
-              </div>
+              <Tilt rotationFactor={30} isRevese>
+                <div className={classIcon}>
+                  <Image
+                    src="/image/x.jpg"
+                    alt="cryptohunt Logo"
+                    className="rounded-3xl"
+                    width={80}
+                    height={80}
+                    priority
+                  />
+                </div>
+              </Tilt>
               <p className="text-center text-white mt-1 font-semibold">
                 热门话题
               </p>
             </Link>
             <Link href="https://www.deepseek.com/" target="_blank">
-              <div className={classIcon}>
-                <Image
-                  src="/image/deepseek.ico"
-                  alt="deepseek Logo"
-                  className="rounded-3xl"
-                  width={80}
-                  height={80}
-                  priority
-                />
-              </div>
+              <Tilt rotationFactor={30} isRevese>
+                <div className={classIcon}>
+                  <Image
+                    src="/image/deepseek.ico"
+                    alt="deepseek Logo"
+                    className="rounded-3xl"
+                    width={80}
+                    height={80}
+                    priority
+                  />
+                </div>
+              </Tilt>
               <p className="text-center text-white mt-1 font-semibold">
                 deepseek
               </p>
