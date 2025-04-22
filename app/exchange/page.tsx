@@ -7,10 +7,12 @@ import {
 } from "@/components/svg/index";
 import { Checkbox } from "@/components/ui/checkbox";
 import Image from "next/image";
+import { Header } from "@/components/ui/mexc-header";
 
 export default function Page() {
   return (
     <>
+      <Header />
       <NavigationMenuMexc />
       <div className={styles.ExchangePage}>
         <div className="wrapper-headline px-4 flex items-center relative">
