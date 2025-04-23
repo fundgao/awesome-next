@@ -19,6 +19,7 @@
 - moment
 - dayjs - moment 轻量版
 - [Docker](https://hub.docker.com)
+- [react-i18next](https://react.i18next.com/)
 
 ## AIGC
 
