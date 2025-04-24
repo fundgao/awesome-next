@@ -19,6 +19,7 @@
 - moment
 - dayjs - moment 轻量版
 - [Docker](https://hub.docker.com)
+- [Ubuntu系统安装Docker](https://blog.csdn.net/u012590718/article/details/125632482)
 - [react-i18next](https://react.i18next.com/)
 
 ## AIGC
