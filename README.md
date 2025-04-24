@@ -128,3 +128,7 @@ v12.22.6
 
 - `"postinstall": "prisma generate"`
 - `"vercel-build": "prisma generate && prisma migrate deploy && next build"`
+- 查看当前数据模型：`npx prisma studio`
+- 查看数据库结构：`npx prisma db pull`（反向生成模型）
+- 重新同步数据库结构：`npx prisma migrate dev`
+- 项目已有 `prisma/schema.prisma` 文件：`npx prisma generate`
