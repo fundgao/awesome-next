@@ -132,3 +132,8 @@ v12.22.6
 - 查看数据库结构：`npx prisma db pull`（反向生成模型）
 - 重新同步数据库结构：`npx prisma migrate dev`
 - 项目已有 `prisma/schema.prisma` 文件：`npx prisma generate`
+
+## MongoDB 
+- 启动 MongoDB 服务: `sudo systemctl start mongod`
+- 检查状态: `sudo systemctl status mongod`
+- 测试 Mongo 控制台: `mongosh`
