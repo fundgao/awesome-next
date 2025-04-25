@@ -1,6 +1,31 @@
 "use client";
 import { ReactNode, useState } from "react";
 import { Message } from "./types";
+import { z } from "zod";
+
+// Validation schema
+const loginSchema = z.object({
+  email: z.string().email(),
+  password: z.string().min(1),
+});
+
+// Validation schema
+const registerSchema = z.object({
+  name: z.string().min(2),
+  email: z.string().email(),
+  password: z.string().min(6),
+});
+
+// const body = await request.json();
+
+// // Validate request body
+// const validation = registerSchema.safeParse(body);
+// if (!validation.success) {
+//   return NextResponse.json(
+//     { error: "Invalid input", details: validation.error.format() },
+//     { status: 400 }
+//   );
+// }
 
 export default function ClientPage({
   getMessageReactNode,

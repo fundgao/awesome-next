@@ -1,5 +1,9 @@
 import type { NextConfig } from "next";
 
+const withBundleAnalyzer = require("@next/bundle-analyzer")({
+  enabled: process.env.ANALYZE === "true",
+});
+
 const nextConfig: NextConfig = {
   sassOptions: {
     additionalData: `$var: red;`,
@@ -17,9 +21,6 @@ const nextConfig: NextConfig = {
       resolveExtensions: [".mdx", ".tsx", ".ts", ".jsx", ".js", ".json"],
     },
   },
-  withBundleAnalyzer: {
-    enabled: process.env.ANALYZE === "true",
-  },
 };
 
-export default nextConfig;
+export default withBundleAnalyzer(nextConfig);

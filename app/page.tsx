@@ -13,7 +13,7 @@ export default function Home() {
   useEffect(() => {
     const handle = setInterval(() => {
       setTime(new Date());
-    }, 1000 * 2);
+    }, 1000);
 
     return () => {
       clearInterval(handle);
