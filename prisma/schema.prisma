@@ -8,12 +8,12 @@ datasource db {
 }
 
 model Message {
-  id          Int      @id @default(autoincrement())
-  role        String   // Will store "user" or "assistant"
-  content     String   @db.Text  // Using Text type for potentially long messages
+  id             Int      @id @default(autoincrement())
+  role           String // Will store "user" or "assistant"
+  content        String   @db.Text // Using Text type for potentially long messages
   conversationId String // To group related messages together
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
 
   // Relation to Conversation
   conversation Conversation @relation(fields: [conversationId], references: [id])
@@ -23,7 +23,10 @@ model Message {
 
 model Conversation {
   id        String    @id @default(uuid()) // Using UUID for conversation ID
+  userId    String // Store the Clerk user ID
   messages  Message[]
   createdAt DateTime  @default(now())
   updatedAt DateTime  @updatedAt
+
+  @@index([userId]) // Index for faster queries when fetching by userId
 }
