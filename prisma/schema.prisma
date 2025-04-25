@@ -3,30 +3,367 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
-  url      = env("DATABASE_URL")
+  provider = "mongodb"
+  url      = "mongodb://localhost:27017/awesome-next?directConnection=true"
 }
 
 model Message {
-  id             Int      @id @default(autoincrement())
+  id             String   @id @default(auto()) @map("_id") @db.ObjectId
   role           String // Will store "user" or "assistant"
-  content        String   @db.Text // Using Text type for potentially long messages
-  conversationId String // To group related messages together
+  content        String
+  conversationId String   @unique
   createdAt      DateTime @default(now())
   updatedAt      DateTime @updatedAt
 
   // Relation to Conversation
   conversation Conversation @relation(fields: [conversationId], references: [id])
-
-  @@index([conversationId]) // Index for faster queries when fetching by conversationId
 }
 
 model Conversation {
-  id        String    @id @default(uuid()) // Using UUID for conversation ID
-  userId    String // Store the Clerk user ID
+  id        String    @id @default(auto()) @map("_id") @db.ObjectId
+  userId    String    @unique
   messages  Message[]
   createdAt DateTime  @default(now())
   updatedAt DateTime  @updatedAt
+}
 
-  @@index([userId]) // Index for faster queries when fetching by userId
+model Comment {
+  id      String @id @default(auto()) @map("_id") @db.ObjectId
+  comment String
+  post    Post   @relation(fields: [postId], references: [id])
+  postId  String @db.ObjectId
+}
+
+model Post {
+  id       String    @id @default(auto()) @map("_id") @db.ObjectId
+  slug     String    @unique
+  title    String
+  body     String
+  author   User      @relation(fields: [authorId], references: [id])
+  authorId String    @db.ObjectId
+  comments Comment[]
+}
+
+model Customer {
+  id                  String             @id @default(auto()) @map("_id") @db.ObjectId
+  firstName           String
+  lastName            String
+  gender              String?
+  dateOfBirth         DateTime?
+  nationality         String?
+  passportNumber      String?
+  passportExpiry      DateTime?
+  email               String?
+  phone               String?
+  alternativePhone    String?
+  address             Address?
+  emergencyContact    EmergencyContact?
+  travelPreferences   TravelPreferences?
+  membershipLevel     String?
+  salesRepresentative String?
+  joinDate            DateTime?
+  referredBy          String?
+  notes               String?
+  newsletter          Boolean            @default(false)
+  status              String             @default("active")
+  customerId          String             @unique
+  cruiseOrders        CruiseOrder[]
+  flightOrders        FlightOrder[]
+  packageOrders       PackageOrder[]
+  createdAt           DateTime           @default(now())
+  updatedAt           DateTime           @updatedAt
+  createdBy           User               @relation("CreatedByUser", fields: [createdById], references: [id])
+  createdById         String             @db.ObjectId
+}
+
+model User {
+  id            String         @id @default(auto()) @map("_id") @db.ObjectId
+  email         String         @unique
+  name          String?
+  password      String
+  role          String         @default("user")
+  createdAt     DateTime       @default(now())
+  updatedAt     DateTime       @updatedAt
+  address       Address?
+  posts         Post[]
+  customers     Customer[]     @relation("CreatedByUser")
+  cruiseOrders  CruiseOrder[]
+  flightOrders  FlightOrder[]
+  packageOrders PackageOrder[]
+}
+
+// Address is an embedded document
+type Address {
+  street  String
+  city    String
+  state   String
+  zip     String
+  country String?
+}
+
+// Emergency contact is an embedded document
+type EmergencyContact {
+  name         String?
+  relationship String?
+  phone        String?
+}
+
+// Travel preferences is an embedded document
+type TravelPreferences {
+  preferredLanguage   String?
+  dietaryRestrictions String[]
+  seatPreference      String?
+  roomPreference      String?
+  specialNeeds        String?
+}
+
+// CruiseOrder model for storing cruise booking information
+model CruiseOrder {
+  id                String   @id @default(auto()) @map("_id") @db.ObjectId
+  reservationNumber String?
+  bookingStatus     String   @default("Pending")
+  cruiseLine        String
+  shipName          String
+  itineraryName     String
+  sailingDate       DateTime
+  nights            Int
+  cabinCategory     String
+  roomNumber        String?
+  embarkationPort   String
+  currency          String   @default("USD")
+  salesAgent        String
+  additionalNotes   String?
+
+  // Financial information
+  financialItems   FinancialItem[]
+  salesPrice       Float
+  agencyCommission Float           @default(10)
+  commissionAmount Float?
+
+  // Passenger information
+  passengers Passenger[]
+
+  // Bonus items
+  bonusItems BonusItem[]
+
+  // Payment records
+  paymentRecords PaymentRecord[]
+
+  // Creation and update timestamps
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // Relationship with User who created this record
+  createdBy   User   @relation(fields: [createdById], references: [id])
+  createdById String @db.ObjectId
+
+  // Relationship with primary Customer
+  customer   Customer? @relation(fields: [customerId], references: [id])
+  customerId String?   @db.ObjectId
+}
+
+// Embedded types for CruiseOrder
+type FinancialItem {
+  item   String
+  amount Float
+  notes  String?
+}
+
+type BonusItem {
+  bonusType   String
+  value       Float?
+  description String?
+}
+
+type PaymentRecord {
+  paymentMethod String
+  paymentDate   DateTime
+  amount        Float
+  reference     String?
+}
+
+type Passenger {
+  isPrimary   Boolean  @default(false)
+  firstName   String
+  lastName    String
+  dateOfBirth DateTime
+  gender      String
+  nationality String
+  phone       String?
+  email       String?
+}
+
+// FlightOrder model for storing flight booking information
+model FlightOrder {
+  id               String   @id @default(auto()) @map("_id") @db.ObjectId
+  bookingReference String
+  bookingType      String // Round Trip, One Way, Multi-City
+  gdsSystem        String?
+  bookingDate      DateTime @default(now())
+  bookingStatus    String   @default("Confirmed")
+  currency         String   @default("USD")
+  cabinClass       String?
+  fareType         String?
+
+  // Flight segments
+  flightSegments FlightSegment[]
+
+  // Passenger information
+  passengers Passenger[]
+
+  // Financial information
+  financialItems   FinancialItem[]
+  ancillaryItems   AncillaryItem[]
+  totalCost        Float           @default(0)
+  totalAncillary   Float           @default(0)
+  serviceFee       Float           @default(0)
+  commissionRate   Float           @default(0)
+  commissionType   String          @default("Percentage")
+  commissionAmount Float           @default(0)
+  netProfit        Float           @default(0)
+  totalPaid        Float           @default(0)
+  balanceDue       Float           @default(0)
+  profitMargin     Float           @default(0)
+  totalAmountDue   Float           @default(0)
+
+  // Payment records
+  paymentRecords PaymentRecord[]
+
+  // Additional information
+  remarks         String?
+  seatSelection   Boolean @default(false)
+  mealRequest     Boolean @default(false)
+  frequentFlyer   Boolean @default(false)
+  additionalNotes String?
+
+  // Creation and update timestamps
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // Relationship with User who created this record
+  createdBy   User   @relation(fields: [createdById], references: [id])
+  createdById String @db.ObjectId
+
+  // Relationship with primary Customer
+  customer   Customer? @relation(fields: [customerId], references: [id])
+  customerId String?   @db.ObjectId
+}
+
+// FlightSegment embedded type
+type FlightSegment {
+  segmentNumber Int
+  airline       String
+  flightNumber  String
+  from          String
+  to            String
+  departureDate DateTime
+  departureTime String?
+  arrivalDate   DateTime
+  arrivalTime   String?
+  cabinClass    String?
+  operatedBy    String?
+  duration      String?
+  aircraft      String?
+  fareBasis     String?
+  baggage       String?
+}
+
+// AncillaryItem embedded type for additional services
+type AncillaryItem {
+  serviceType String
+  amount      Float
+  description String?
+}
+
+// PackageOrder model for storing package tour booking information
+model PackageOrder {
+  id               String   @id @default(auto()) @map("_id") @db.ObjectId
+  packageName      String
+  packageType      String
+  bookingReference String?
+  startDate        DateTime
+  endDate          DateTime
+  duration         Int
+  destination      String
+  departureCity    String
+  currency         String   @default("USD")
+  salesAgent       String
+  bookingStatus    String   @default("Pending")
+
+  // Financial information
+  financialItems   FinancialItem[]
+  totalPrice       Float
+  agencyCommission Float           @default(10)
+  commissionAmount Float?
+
+  // Inclusions
+  includedItems IncludedItem[]
+
+  // Passenger information
+  passengers Passenger[]
+
+  // Package components
+  accommodations  Accommodation[]
+  transportations Transportation[]
+  activities      Activity[]
+
+  // Payment records
+  paymentRecords PaymentRecord[]
+
+  // Additional information
+  additionalNotes  String?
+  itineraryDetails String?
+
+  // Creation and update timestamps
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // Relationship with User who created this record
+  createdBy   User   @relation(fields: [createdById], references: [id])
+  createdById String @db.ObjectId
+
+  // Relationship with primary Customer
+  customer   Customer? @relation(fields: [customerId], references: [id])
+  customerId String?   @db.ObjectId
+}
+
+// Embedded types for PackageOrder
+type IncludedItem {
+  itemType    String
+  description String
+  value       Float?
+}
+
+type Accommodation {
+  hotelName          String
+  roomType           String
+  checkIn            DateTime
+  checkOut           DateTime
+  location           String
+  confirmationNumber String?
+  includesBreakfast  Boolean?
+  specialRequests    String?
+}
+
+type Transportation {
+  type               String
+  departureDate      DateTime
+  departureTime      String?
+  departureLocation  String
+  arrivalDate        DateTime
+  arrivalTime        String?
+  arrivalLocation    String
+  carrierName        String?
+  carrierNumber      String?
+  confirmationNumber String?
+}
+
+type Activity {
+  name               String
+  date               DateTime
+  time               String?
+  location           String
+  duration           String?
+  confirmationNumber String?
+  description        String?
 }
