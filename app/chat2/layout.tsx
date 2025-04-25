@@ -27,7 +27,10 @@ export default function RootLayout({
 }>) {
   return (
     <Suspense>
-      <ClerkProvider afterSignOutUrl="/chat">
+      <ClerkProvider
+        afterSignOutUrl="/chat"
+        publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}
+      >
         <html lang="en" suppressHydrationWarning>
           <head>
             <meta
