@@ -193,6 +193,26 @@ export default function Home() {
               </p>
             </Link>
             {/* https://chainlist.org/ */}
+            <Link
+              href="https://coinmarketcap.com/zh/charts/fear-and-greed-index/"
+              target="_blank"
+            >
+              <Tilt rotationFactor={30} isRevese>
+                <div className={classIcon}>
+                  <Image
+                    src="/image/fear-and-greed.png"
+                    alt="deepseek Logo"
+                    className="rounded-3xl"
+                    width={80}
+                    height={80}
+                    priority
+                  />
+                </div>
+              </Tilt>
+              <p className="text-center text-white mt-1 font-semibold">
+                恐贪指数
+              </p>
+            </Link>
           </div>
           <div className="texts flex justify-center space-x-4 text-white mt-9">
             <Link
