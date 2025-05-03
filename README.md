@@ -137,3 +137,7 @@ v12.22.6
 - 启动 MongoDB 服务: `sudo systemctl start mongod`
 - 检查状态: `sudo systemctl status mongod`
 - 测试 Mongo 控制台: `mongosh`
+
+## Mac 安装 brew 失败的方法
+- 改用国内源 https://blog.csdn.net/JOJO_mb/article/details/141440554
+
