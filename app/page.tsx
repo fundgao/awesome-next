@@ -202,7 +202,7 @@ export default function Home() {
                   <Image
                     src="/image/fear-and-greed.png"
                     alt="deepseek Logo"
-                    className="rounded-3xl"
+                    className="rounded-3xl object-cover w-[80px] h-[80px]"
                     width={80}
                     height={80}
                     priority
