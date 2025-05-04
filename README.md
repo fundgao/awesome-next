@@ -141,3 +141,6 @@ v12.22.6
 ## Mac 安装 brew 失败的方法
 - 改用国内源 https://blog.csdn.net/JOJO_mb/article/details/141440554
 
+## MacOS 终端代理修改
+- 查看 IP 命令 `curl cip.cc`
+- 修改命令 `export https_proxy=http://127.0.0.1:7897 http_proxy=http://127.0.0.1:7897 all_proxy=socks5://127.0.0.1:7897`
