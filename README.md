@@ -134,9 +134,15 @@ v12.22.6
 - 项目已有 `prisma/schema.prisma` 文件：`npx prisma generate`
 
 ## MongoDB 
+- `brew tap mongodb/brew`
+- `brew install mongodb-community`
 - 启动 MongoDB 服务: `sudo systemctl start mongod`
 - 检查状态: `sudo systemctl status mongod`
 - 测试 Mongo 控制台: `mongosh`
+- 克隆远程数据库 `mongodump --uri="替换为远程数据库的 uri" --db=heyboss --excludeCollection=llm_records --excludeCollection=deduct_logs`
+- 安装 mongodb tools `brew install mongodb-database-tools`
+
+### 单独安装 Database Tools
 
 ## Mac 安装 brew 失败的方法
 - 改用国内源 https://blog.csdn.net/JOJO_mb/article/details/141440554
