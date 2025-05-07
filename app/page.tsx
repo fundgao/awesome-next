@@ -63,7 +63,7 @@ export default function Home() {
               padStart={true}
             />
             :
-            <SlidingNumber value={time.getSeconds() + 1} padStart={true} />
+            <SlidingNumber value={time.getSeconds()} padStart={true} />
           </div>
           <h1 className="font-semibold leading-none tracking-tighter text-5xl md:text-6xl text-white">
             Fund
