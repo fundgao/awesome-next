@@ -63,7 +63,7 @@ export default function Home() {
               padStart={true}
             />
             :
-            <SlidingNumber value={time.getSeconds()} padStart={true} />
+            <SlidingNumber value={time.getSeconds() + 1} padStart={true} />
           </div>
           <h1 className="font-semibold leading-none tracking-tighter text-5xl md:text-6xl text-white">
             Fund
@@ -177,7 +177,7 @@ export default function Home() {
                 热门话题
               </p>
             </Link>
-            <Link href="https://www.deepseek.com/" target="_blank" className="group">
+            {/* <Link href="https://www.deepseek.com/" target="_blank" className="group">
               <Tilt rotationFactor={30} isRevese>
                 <div className={classIcon}>
                   <Image
@@ -193,7 +193,7 @@ export default function Home() {
               <p className="text-center text-white mt-1 font-semibold group-hover:underline">
                 deepseek
               </p>
-            </Link>
+            </Link> */}
             {/* https://chainlist.org/ */}
             <Link
               href="https://coinmarketcap.com/zh/charts/fear-and-greed-index/"
