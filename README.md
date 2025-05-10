@@ -7,7 +7,6 @@
 - ThreeJS
 - Web3.0 [$ npm install --save @solana/web3.js](https://github.com/solana-labs/solana-web3.js)
 - [Ant Design](https://ant-design.antgroup.com/index-cn)
-- [Magic UI](https://magicui.design/docs/installation/react)
 - [motion-primitives](https://motion-primitives.com/docs/installation)
 - [NextUI](https://nextui.org/docs/guide/installation)
 - [tailwindcss](https://tailwindcss.com/docs/installation)
@@ -21,6 +20,11 @@
 - [Docker](https://hub.docker.com)
 - [Ubuntu系统安装Docker](https://blog.csdn.net/u012590718/article/details/125632482)
 - [react-i18next](https://react.i18next.com/)
+
+## 动画 & UI
+- [GSAP](https://gsap.com/docs/v3/)
+- [motion](https://motion.dev/)
+- [Magic UI](https://magicui.design/docs/installation/react)
 
 ## AIGC
 
