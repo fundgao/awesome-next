@@ -5,7 +5,7 @@ import {
   ISuccessResult,
 } from "@worldcoin/idkit";
 
-const app_id: any = process.env.APP_ID || "";
+const app_id = process.env.APP_ID || "";
 const action = process.env.ACTION_ID || "";
 
 export default function Page() {
@@ -33,6 +33,7 @@ export default function Page() {
 
   return (
     <IDKitWidget
+      // @ts-ignore
       app_id={app_id} // obtained from the Developer Portal
       action={action} // obtained from the Developer Portal
       onSuccess={onSuccess} // callback when the modal is closed
