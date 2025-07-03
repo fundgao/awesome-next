@@ -5,6 +5,7 @@ import { LineShadowText } from "@/components/ui/line-shadow-text";
 import { VelocityScroll } from "@/components/ui/scroll-text";
 import Link from "next/link";
 import { Cointool } from "@/components/svg";
+// https://motion-primitives.com/docs/sliding-number
 import { SlidingNumber } from "@/components/ui/sliding-number";
 import { Tilt } from "@/components/ui/tilt";
 
