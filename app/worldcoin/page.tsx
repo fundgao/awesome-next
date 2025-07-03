@@ -32,18 +32,21 @@ export default function Page() {
   };
 
   return (
-    <IDKitWidget
-      // @ts-ignore
-      app_id={app_id} // obtained from the Developer Portal
-      action={action} // obtained from the Developer Portal
-      onSuccess={onSuccess} // callback when the modal is closed
-      handleVerify={handleVerify} // callback when the proof is received
-      verification_level={VerificationLevel.Orb}
-    >
-      {({ open }) => (
-        // This is the button that will open the IDKit modal
-        <button onClick={open}>Verify with World ID</button>
-      )}
-    </IDKitWidget>
+    <>
+      <h1>Hello</h1>
+    </>
+    // <IDKitWidget
+    //   // @ts-ignore
+    //   app_id={app_id} // obtained from the Developer Portal
+    //   action={action} // obtained from the Developer Portal
+    //   onSuccess={onSuccess} // callback when the modal is closed
+    //   handleVerify={handleVerify} // callback when the proof is received
+    //   verification_level={VerificationLevel.Orb}
+    // >
+    //   {({ open }) => (
+    //     // This is the button that will open the IDKit modal
+    //     <button onClick={open}>Verify with World ID</button>
+    //   )}
+    // </IDKitWidget>
   );
 }
