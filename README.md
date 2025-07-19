@@ -154,3 +154,4 @@ v12.22.6
 ## MacOS 终端代理修改
 - 查看 IP 命令 `curl cip.cc`
 - 修改命令 `export https_proxy=http://127.0.0.1:7897 http_proxy=http://127.0.0.1:7897 all_proxy=socks5://127.0.0.1:7897`
+- IP地址归属地查询 https://ping0.cc/
