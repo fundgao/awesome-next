@@ -25,6 +25,7 @@
 - [GSAP](https://gsap.com/docs/v3/)
 - [motion](https://motion.dev/)
 - [Magic UI](https://magicui.design/docs/installation/react)
+- [React Bits] https://reactbits.dev/get-started/introduction
 
 ## AIGC
 
