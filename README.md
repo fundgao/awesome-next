@@ -33,6 +33,7 @@
 - [传统经典编程与 AIGC 的融合](https://juejin.cn/post/7371731578962493474)
 - LangChain https://js.langchain.com/docs/introduction
 - vercel ai https://sdk.vercel.ai/
+- Dify https://docs.dify.ai/zh-hans/learn-more/use-cases/connect-dify-to-various-im-platforms-by-using-langbot
 
 ## Crypto
 
