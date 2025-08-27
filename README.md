@@ -1,16 +1,12 @@
 ## 相关依赖
 
-- React
+- [React](https://zh-hans.react.dev/reference/react)
 - [NextJS](https://nextjs.org/docs)
-- TypeScript
-- AIGC - openai 豆包
-- ThreeJS
 - Web3.0 [$ npm install --save @solana/web3.js](https://github.com/solana-labs/solana-web3.js)
 - [Ant Design](https://ant-design.antgroup.com/index-cn)
 - [motion-primitives](https://motion-primitives.com/docs/installation)
 - [NextUI](https://nextui.org/docs/guide/installation)
 - [tailwindcss](https://tailwindcss.com/docs/installation)
-- [白嫖 - 图床](https://molunerfinn.com/PicGo/)
 - [npm i dotenv](https://www.npmjs.com/package/dotenv) - next 自带环境切换
 - [ahooks](https://ahooks.js.org/)
 - [Lodash](https://github.com/lodash/lodash)
@@ -22,8 +18,9 @@
 - [react-i18next](https://react.i18next.com/)
 
 ## 动画 & UI
+
 - [GSAP](https://gsap.com/docs/v3/)
-- [motion](https://motion.dev/)
+- [motion](https://motion.dev/) - usePageInView useInView
 - [Magic UI](https://magicui.design/docs/installation/react)
 - [React Bits](https://reactbits.dev/get-started/introduction)
 
@@ -31,23 +28,15 @@
 
 - [openai npm](https://www.npmjs.com/package/openai)
 - [openai docs](https://platform.openai.com/docs/quickstart?context=node)
-- [传统经典编程与 AIGC 的融合](https://juejin.cn/post/7371731578962493474)
 - LangChain https://js.langchain.com/docs/introduction
 - vercel ai https://sdk.vercel.ai/
-- Dify https://docs.dify.ai/zh-hans/learn-more/use-cases/connect-dify-to-various-im-platforms-by-using-langbot
+- Grok https://grok.com/
 
 ## Crypto
 
 - [World Chain Developer](https://developer.worldcoin.org/teams/team_95a2c9a39a3cf2b803c9392ae3615f16)
 - [World Coin Install](https://docs.worldcoin.org/quick-start/installation)
 - https://wagmi.sh/react/getting-started
-
-## ThreeJS
-
-- [Threejs](https://threejs.org/)
-- [Threejs Demo](https://github.com/xiaolidan00/my-earth)
-- [Threejs 教程集合](https://juejin.cn/collection/7375807995392032777)
-- [three.js 下雨特效（高级版本）](https://juejin.cn/post/7369784341465907240)
 
 ## DEMO
 
@@ -61,28 +50,8 @@
 
 ## SEO
 
-- [next-sitemap](https://www.npmjs.com/package/next-sitemap)
-- [next-seo](https://www.npmjs.com/package/next-seo)
 - [Nextjs SEO Docs](https://nextjs.org/docs/app/api-reference/file-conventions/metadata)
 - [manifest.json](https://nextjs.org/docs/app/api-reference/file-conventions/metadata/manifest)
-
-```
-这些第三方依赖不用，因为有自带的
-npm i next-sitemap
-npm i next-seo
-```
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
 # npm 换源
 
