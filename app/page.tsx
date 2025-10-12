@@ -136,7 +136,7 @@ export default function Home() {
                 腾讯文档
               </p>
             </Link>
-            <Link
+            {/* <Link
               href="https://www.mexc.com/zh-TW/support/categories/360000254192?utm_source=mexc&utm_medium=webmenu&utm_campaign=announcements"
               target="_blank"
               className="group"
@@ -156,9 +156,9 @@ export default function Home() {
               <p className="text-center text-white mt-1 font-semibold group-hover:underline">
                 抹茶公告
               </p>
-            </Link>
+            </Link> */}
             <Link
-              href="https://www.cryptohunt.ai/zh-CN/dashboard/twitterTags"
+              href="https://app.xhunt.ai/zh-CN/dashboard/twitterTags"
               target="_blank"
               className="group"
             >
